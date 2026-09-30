@@ -52,6 +52,7 @@
                 <div class="hidden lg:flex space-x-8 items-center">
                     <a href="#" class="text-darkBrown hover:text-brandOrange font-semibold text-sm transition-colors">Home</a>
                     <a href="#about" class="text-darkBrown hover:text-brandOrange font-semibold text-sm transition-colors">About Us</a>
+                    <a href="#impact-stats" class="text-darkBrown hover:text-brandOrange font-semibold text-sm transition-colors">Impact</a>
                     <a href="#programmes" class="text-darkBrown hover:text-brandOrange font-semibold text-sm transition-colors">Programmes</a>
                     <a href="#gallery" class="text-darkBrown hover:text-brandOrange font-semibold text-sm transition-colors">Gallery</a>
                 </div>
@@ -73,6 +74,7 @@
             <div class="flex flex-col space-y-4 pt-4">
                 <a href="#" class="mobile-link text-darkBrown hover:text-brandOrange font-semibold text-lg">Home</a>
                 <a href="#about" class="mobile-link text-darkBrown hover:text-brandOrange font-semibold text-lg">About Us</a>
+                <a href="#impact-stats" class="mobile-link text-darkBrown hover:text-brandOrange font-semibold text-lg">Impact</a>
                 <a href="#programmes" class="mobile-link text-darkBrown hover:text-brandOrange font-semibold text-lg">Programmes</a>
                 <a href="#gallery" class="mobile-link text-darkBrown hover:text-brandOrange font-semibold text-lg">Gallery</a>
                 <div class="border-t border-gray-200 pt-4 flex space-x-6">
@@ -85,41 +87,35 @@
         </div>
     </nav>
 
-    <!-- HERO SECTION WITH VISIBLE SLIDER AND FROSTED GLASS -->
-    <header class="relative pt-40 pb-32 px-4 text-center overflow-hidden min-h-[85vh] flex items-center">
-        
-        <!-- Background Slider (Fixed spaces in image names with %20 so browsers load them properly) -->
-        <div id="hero-slider" class="absolute inset-0 z-0">
-            <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-100" style="background-image: url('The%20waste%20management%20team.jpeg');"></div>
-            <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('With%20the%20community%20.jpeg');"></div>
-            <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('Garbage%20collection.jpeg');"></div>
-            
-            <!-- Very light overlay just to take the edge off the photos -->
-            <div class="absolute inset-0 bg-lightGreen/30"></div>
-        </div>
-
-        <!-- Text Content inside a Frosted Glass Container -->
-        <div class="relative max-w-5xl mx-auto z-10 w-full bg-white/70 backdrop-blur-md p-8 md:p-14 rounded-3xl shadow-2xl border border-white/60">
+    <!-- SPLIT-SCREEN HERO SECTION -->
+    <header class="relative pt-24 min-h-[85vh] flex flex-col lg:flex-row bg-white">
+        <div class="w-full lg:w-1/2 flex flex-col justify-center items-start px-8 md:px-16 lg:px-24 py-16 lg:py-0 z-10">
             <p class="text-xs md:text-sm font-bold tracking-[0.2em] text-brandOrange uppercase mb-6">
                 Youth • Elderly • Environment • Climate Resilience
             </p>
-            <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold text-deepGreen leading-[1.1] tracking-tight mb-8">
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold text-deepGreen leading-[1.1] tracking-tight mb-8 text-left">
                 Bridging Generations.<br>
                 Building Sustainable<br>
                 Communities.
             </h1>
-            <p class="text-lg md:text-xl text-darkBrown font-medium max-w-3xl mx-auto mb-10 leading-relaxed">
+            <p class="text-lg md:text-xl text-darkBrown font-medium max-w-xl mb-10 leading-relaxed text-left">
                 Suluhisho Youth and Elderly Empowerment is a community-based organization working alongside underserved communities in Mombasa and Kwale to improve livelihoods, promote green enterprise, and protect our coastal environment.
             </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#programmes" class="bg-brandOrange text-white hover:bg-deepGreen px-8 py-4 rounded-full font-bold text-lg transition-all shadow-lg">Explore Our Work</a>
-                <a href="https://wa.me/254712561922?text=Hello%20Suluhisho!%20I%20would%20like%20to%20donate." target="_blank" class="bg-white text-deepGreen border-2 border-deepGreen hover:bg-deepGreen hover:text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-md">Support Our Cause</a>
+            <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+                <a href="#programmes" class="bg-brandOrange text-white hover:bg-deepGreen px-8 py-4 rounded-full font-bold text-lg transition-all shadow-lg text-center">Explore Our Work</a>
+                <a href="https://wa.me/254712561922?text=Hello%20Suluhisho!%20I%20would%20like%20to%20donate." target="_blank" class="bg-white text-deepGreen border-2 border-deepGreen hover:bg-deepGreen hover:text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-md text-center">Support Our Cause</a>
             </div>
+        </div>
+
+        <div id="hero-slider" class="w-full lg:w-1/2 relative min-h-[50vh] lg:min-h-full">
+            <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-100" style="background-image: url('The%20waste%20management%20team.jpeg');"></div>
+            <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('With%20the%20community%20.jpeg');"></div>
+            <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('Garbage%20collection.jpeg');"></div>
         </div>
     </header>
 
     <!-- ABOUT SECTION -->
-    <section id="about" class="py-24 bg-white">
+    <section id="about" class="py-24 bg-lightGreen">
         <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12">
             <div class="bg-white p-10 rounded-2xl border-t-4 border-deepGreen shadow-lg hover:shadow-xl transition-shadow">
                 <h3 class="text-2xl font-extrabold text-deepGreen mb-4"><i class="fa-solid fa-eye mr-3 text-brandOrange"></i>Our Vision</h3>
@@ -128,6 +124,59 @@
             <div class="bg-white p-10 rounded-2xl border-t-4 border-deepGreen shadow-lg hover:shadow-xl transition-shadow">
                 <h3 class="text-2xl font-extrabold text-deepGreen mb-4"><i class="fa-solid fa-bullseye mr-3 text-brandOrange"></i>Our Mission</h3>
                 <p class="text-darkBrown/90 text-lg leading-relaxed">To empower women, girls, youth, and elderly persons with skills, opportunities, and sustainable solutions that improve livelihoods, strengthen communities, and protect the environment.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- IMPACT BY THE NUMBERS SECTION -->
+    <section id="impact-stats" class="py-20 bg-white border-y border-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-14">
+                <p class="text-xs md:text-sm font-bold tracking-[0.2em] text-brightGreen uppercase mb-2">Proven Track Record</p>
+                <h2 class="text-4xl font-extrabold text-deepGreen">Our Impact in Numbers</h2>
+                <div class="w-20 h-1.5 bg-brandOrange mx-auto rounded-full mt-3"></div>
+            </div>
+            
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <!-- Stat 1 -->
+                <div class="p-6 rounded-2xl bg-lightOlive hover:-translate-y-1 transition-transform border border-gray-100 shadow-sm">
+                    <div class="w-12 h-12 mx-auto mb-4 bg-deepGreen/10 rounded-full flex items-center justify-center">
+                        <i class="fa-solid fa-dumpster text-deepGreen text-xl"></i>
+                    </div>
+                    <h3 class="text-4xl md:text-5xl font-black text-brandOrange mb-2">50+</h3>
+                    <p class="text-sm md:text-base font-bold text-deepGreen uppercase tracking-wider">Tons Waste Diverted</p>
+                    <p class="text-xs text-darkBrown/70 mt-1">Organic waste converted to compost</p>
+                </div>
+
+                <!-- Stat 2 -->
+                <div class="p-6 rounded-2xl bg-lightOlive hover:-translate-y-1 transition-transform border border-gray-100 shadow-sm">
+                    <div class="w-12 h-12 mx-auto mb-4 bg-deepGreen/10 rounded-full flex items-center justify-center">
+                        <i class="fa-solid fa-users text-deepGreen text-xl"></i>
+                    </div>
+                    <h3 class="text-4xl md:text-5xl font-black text-brandOrange mb-2">500+</h3>
+                    <p class="text-sm md:text-base font-bold text-deepGreen uppercase tracking-wider">People Empowered</p>
+                    <p class="text-xs text-darkBrown/70 mt-1">Youth and elders trained in green skills</p>
+                </div>
+
+                <!-- Stat 3 -->
+                <div class="p-6 rounded-2xl bg-lightOlive hover:-translate-y-1 transition-transform border border-gray-100 shadow-sm">
+                    <div class="w-12 h-12 mx-auto mb-4 bg-deepGreen/10 rounded-full flex items-center justify-center">
+                        <i class="fa-solid fa-tree text-deepGreen text-xl"></i>
+                    </div>
+                    <h3 class="text-4xl md:text-5xl font-black text-brandOrange mb-2">1,000+</h3>
+                    <p class="text-sm md:text-base font-bold text-deepGreen uppercase tracking-wider">Trees & Mangroves</p>
+                    <p class="text-xs text-darkBrown/70 mt-1">Planted for coastal climate resilience</p>
+                </div>
+
+                <!-- Stat 4 -->
+                <div class="p-6 rounded-2xl bg-lightOlive hover:-translate-y-1 transition-transform border border-gray-100 shadow-sm">
+                    <div class="w-12 h-12 mx-auto mb-4 bg-deepGreen/10 rounded-full flex items-center justify-center">
+                        <i class="fa-solid fa-handshake text-deepGreen text-xl"></i>
+                    </div>
+                    <h3 class="text-4xl md:text-5xl font-black text-brandOrange mb-2">100%</h3>
+                    <p class="text-sm md:text-base font-bold text-deepGreen uppercase tracking-wider">Community Led</p>
+                    <p class="text-xs text-darkBrown/70 mt-1">Intergenerational grassroots initiatives</p>
+                </div>
             </div>
         </div>
     </section>

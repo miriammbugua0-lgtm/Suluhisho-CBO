@@ -87,30 +87,36 @@
         </div>
     </nav>
 
-    <!-- SPLIT-SCREEN HERO SECTION -->
-    <header class="relative pt-24 min-h-[85vh] flex flex-col lg:flex-row bg-white">
-        <div class="w-full lg:w-1/2 flex flex-col justify-center items-start px-8 md:px-16 lg:px-24 py-16 lg:py-0 z-10">
+    <!-- HERO SECTION WITH VISIBLE SLIDER AND FROSTED GLASS -->
+    <header class="relative pt-40 pb-32 px-4 text-center overflow-hidden min-h-[85vh] flex items-center">
+        
+        <!-- Background Slider -->
+        <div id="hero-slider" class="absolute inset-0 z-0">
+            <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-100" style="background-image: url('The%20waste%20management%20team.jpeg');"></div>
+            <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('With%20the%20community%20.jpeg');"></div>
+            <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('Garbage%20collection.jpeg');"></div>
+            
+            <!-- Subtle tint overlay -->
+            <div class="absolute inset-0 bg-lightGreen/30"></div>
+        </div>
+
+        <!-- Text Content inside Frosted Glass Card -->
+        <div class="relative max-w-5xl mx-auto z-10 w-full bg-white/80 backdrop-blur-md p-8 md:p-14 rounded-3xl shadow-2xl border border-white/60">
             <p class="text-xs md:text-sm font-bold tracking-[0.2em] text-brandOrange uppercase mb-6">
                 Youth • Elderly • Environment • Climate Resilience
             </p>
-            <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold text-deepGreen leading-[1.1] tracking-tight mb-8 text-left">
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold text-deepGreen leading-[1.1] tracking-tight mb-8">
                 Bridging Generations.<br>
                 Building Sustainable<br>
                 Communities.
             </h1>
-            <p class="text-lg md:text-xl text-darkBrown font-medium max-w-xl mb-10 leading-relaxed text-left">
+            <p class="text-lg md:text-xl text-darkBrown font-medium max-w-3xl mx-auto mb-10 leading-relaxed">
                 Suluhisho Youth and Elderly Empowerment is a community-based organization working alongside underserved communities in Mombasa and Kwale to improve livelihoods, promote green enterprise, and protect our coastal environment.
             </p>
-            <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-                <a href="#programmes" class="bg-brandOrange text-white hover:bg-deepGreen px-8 py-4 rounded-full font-bold text-lg transition-all shadow-lg text-center">Explore Our Work</a>
-                <a href="https://wa.me/254712561922?text=Hello%20Suluhisho!%20I%20would%20like%20to%20donate." target="_blank" class="bg-white text-deepGreen border-2 border-deepGreen hover:bg-deepGreen hover:text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-md text-center">Support Our Cause</a>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#programmes" class="bg-brandOrange text-white hover:bg-deepGreen px-8 py-4 rounded-full font-bold text-lg transition-all shadow-lg">Explore Our Work</a>
+                <a href="https://wa.me/254712561922?text=Hello%20Suluhisho!%20I%20would%20like%20to%20donate." target="_blank" class="bg-white text-deepGreen border-2 border-deepGreen hover:bg-deepGreen hover:text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-md">Support Our Cause</a>
             </div>
-        </div>
-
-        <div id="hero-slider" class="w-full lg:w-1/2 relative min-h-[50vh] lg:min-h-full">
-            <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-100" style="background-image: url('The%20waste%20management%20team.jpeg');"></div>
-            <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('With%20the%20community%20.jpeg');"></div>
-            <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('Garbage%20collection.jpeg');"></div>
         </div>
     </header>
 

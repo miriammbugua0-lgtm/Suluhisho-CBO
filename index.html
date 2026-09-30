@@ -17,6 +17,20 @@
             }
         }
     </script>
+    <!-- Custom CSS for the Infinite Gallery Scroll -->
+    <style>
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-scroll {
+            animation: scroll 40s linear infinite;
+            width: max-content;
+        }
+        .animate-scroll:hover {
+            animation-play-state: paused;
+        }
+    </style>
 </head>
 <body class="font-sans text-gray-800 antialiased bg-white">
 
@@ -31,6 +45,7 @@
                     <a href="#" class="text-brandBlue hover:text-brandGold font-semibold text-sm transition-colors">Home</a>
                     <a href="#about" class="text-brandBlue hover:text-brandGold font-semibold text-sm transition-colors">About Us</a>
                     <a href="#programmes" class="text-brandBlue hover:text-brandGold font-semibold text-sm transition-colors">Programmes</a>
+                    <a href="#gallery" class="text-brandBlue hover:text-brandGold font-semibold text-sm transition-colors">Gallery</a>
                 </div>
                 <div class="hidden lg:flex items-center space-x-6 border-l pl-6 border-gray-200">
                     <a href="https://www.linkedin.com/in/suluhisho-cbo-335155308?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="text-brandBlue hover:text-brandGreen text-xl transition-colors"><i class="fa-brands fa-linkedin"></i></a>
@@ -44,18 +59,12 @@
 
     <!-- HERO SECTION WITH IMAGE SLIDER -->
     <header class="relative pt-40 pb-32 px-4 text-center overflow-hidden min-h-[80vh] flex items-center">
-        
-        <!-- Background Slider -->
         <div id="hero-slider" class="absolute inset-0 z-0">
             <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-100" style="background-image: url('The waste management team.jpeg');"></div>
             <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('With the community .jpeg');"></div>
             <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('Garbage collection.jpeg');"></div>
-            
-            <!-- Deep Navy Blue Overlay for text readability -->
             <div class="absolute inset-0 bg-brandBlue/80"></div>
         </div>
-
-        <!-- Text Content -->
         <div class="relative max-w-5xl mx-auto z-10 w-full">
             <p class="text-xs md:text-sm font-bold tracking-[0.2em] text-brandGold uppercase mb-6">
                 Youth • Elderly • Environment • Climate Resilience
@@ -120,6 +129,49 @@
         </div>
     </section>
 
+    <!-- INFINITE SLIDING GALLERY SECTION -->
+    <section id="gallery" class="py-24 bg-white overflow-hidden">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-extrabold text-brandBlue mb-4">Our Impact in Pictures</h2>
+            <div class="w-24 h-1.5 bg-brandGold mx-auto rounded-full"></div>
+        </div>
+        
+        <div class="relative w-full flex overflow-hidden">
+            <!-- To make the infinite loop seamless, we list the images twice! -->
+            <div class="flex animate-scroll gap-6 px-3">
+                
+                <!-- SET 1 -->
+                <img src="Garbage collection.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
+                <img src="Moments.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
+                <img src="Our resources.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
+                <img src="Partnerships.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
+                <img src="Recycling.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
+                <img src="The waste management team.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
+                <img src="Waste Management.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
+                <img src="Waste Packaging 1.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
+                <img src="Waste Packaging.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
+                <img src="Waste sorting .jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
+                <img src="we thrive on wisdome.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
+                <img src="With the community .jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
+
+                <!-- SET 2 (Duplicate to create the seamless loop) -->
+                <img src="Garbage collection.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
+                <img src="Moments.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
+                <img src="Our resources.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
+                <img src="Partnerships.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
+                <img src="Recycling.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
+                <img src="The waste management team.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
+                <img src="Waste Management.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
+                <img src="Waste Packaging 1.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
+                <img src="Waste Packaging.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
+                <img src="Waste sorting .jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
+                <img src="we thrive on wisdome.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
+                <img src="With the community .jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
+                
+            </div>
+        </div>
+    </section>
+
     <footer class="bg-brandBlue text-gray-300 py-16">
         <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-12">
             <div>
@@ -143,7 +195,7 @@
         </div>
     </footer>
 
-    <!-- Javascript for the sliding photos -->
+    <!-- Javascript for the Hero sliding photos -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             let currentSlide = 0;
@@ -158,7 +210,7 @@
                     
                     slides[currentSlide].classList.remove('opacity-0');
                     slides[currentSlide].classList.add('opacity-100');
-                }, 4000); // Fades to a new image every 4 seconds
+                }, 4000);
             }
         });
     </script>

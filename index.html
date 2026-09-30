@@ -42,22 +42,35 @@
         </div>
     </nav>
 
-    <header class="relative pt-40 pb-32 px-4 text-center bg-gradient-to-b from-white to-green-50 overflow-hidden">
-        <div class="relative max-w-5xl mx-auto z-10">
-            <p class="text-xs md:text-sm font-bold tracking-[0.2em] text-brandGreen uppercase mb-6">
+    <!-- HERO SECTION WITH IMAGE SLIDER -->
+    <header class="relative pt-40 pb-32 px-4 text-center overflow-hidden min-h-[80vh] flex items-center">
+        
+        <!-- Background Slider -->
+        <div id="hero-slider" class="absolute inset-0 z-0">
+            <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-100" style="background-image: url('The waste management team.jpeg');"></div>
+            <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('With the community .jpeg');"></div>
+            <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('Garbage collection.jpeg');"></div>
+            
+            <!-- Deep Navy Blue Overlay for text readability -->
+            <div class="absolute inset-0 bg-brandBlue/80"></div>
+        </div>
+
+        <!-- Text Content -->
+        <div class="relative max-w-5xl mx-auto z-10 w-full">
+            <p class="text-xs md:text-sm font-bold tracking-[0.2em] text-brandGold uppercase mb-6">
                 Youth • Elderly • Environment • Climate Resilience
             </p>
-            <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold text-brandBlue leading-[1.1] tracking-tight mb-8">
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-[1.1] tracking-tight mb-8 drop-shadow-lg">
                 Bridging Generations.<br>
                 Building Sustainable<br>
                 Communities.
             </h1>
-            <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-10 leading-relaxed">
+            <p class="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto mb-10 leading-relaxed">
                 Suluhisho Youth and Elderly Empowerment is a community-based organization working alongside underserved communities in Mombasa and Kwale to improve livelihoods, promote green enterprise, and protect our coastal environment.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#programmes" class="bg-brandBlue text-white hover:bg-brandGreen px-8 py-4 rounded-full font-bold text-lg transition-all shadow-lg">Explore Our Work</a>
-                <a href="https://wa.me/254712561922?text=Hello%20Suluhisho!%20I%20would%20like%20to%20donate." target="_blank" class="bg-white text-brandBlue border-2 border-brandBlue hover:bg-brandGold hover:border-brandGold hover:text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-md">Support Our Cause</a>
+                <a href="#programmes" class="bg-brandGold text-brandBlue hover:bg-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-lg">Explore Our Work</a>
+                <a href="https://wa.me/254712561922?text=Hello%20Suluhisho!%20I%20would%20like%20to%20donate." target="_blank" class="bg-transparent text-white border-2 border-white hover:bg-white hover:text-brandBlue px-8 py-4 rounded-full font-bold text-lg transition-all shadow-md">Support Our Cause</a>
             </div>
         </div>
     </header>
@@ -130,5 +143,24 @@
         </div>
     </footer>
 
+    <!-- Javascript for the sliding photos -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let currentSlide = 0;
+            const slides = document.querySelectorAll('#hero-slider .slide');
+            
+            if(slides.length > 0) {
+                setInterval(() => {
+                    slides[currentSlide].classList.remove('opacity-100');
+                    slides[currentSlide].classList.add('opacity-0');
+                    
+                    currentSlide = (currentSlide + 1) % slides.length;
+                    
+                    slides[currentSlide].classList.remove('opacity-0');
+                    slides[currentSlide].classList.add('opacity-100');
+                }, 4000); // Fades to a new image every 4 seconds
+            }
+        });
+    </script>
 </body>
 </html>

@@ -45,29 +45,22 @@
     <nav class="bg-white/95 backdrop-blur-md fixed w-full z-50 top-0 border-b border-gray-100 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-24 items-center">
-                <!-- Left: Logo & Brand Name -->
                 <div class="flex items-center gap-3">
                     <img class="h-16 w-auto" src="logo.jpg" alt="Suluhisho Logo">
                     <span class="font-extrabold text-2xl text-deepGreen tracking-tight">SULUHISHO CBO</span>
                 </div>
-
-                <!-- Center: Desktop Navigation Links -->
                 <div class="hidden lg:flex space-x-8 items-center">
                     <a href="#" class="text-darkBrown hover:text-brandOrange font-semibold text-sm transition-colors">Home</a>
                     <a href="#about" class="text-darkBrown hover:text-brandOrange font-semibold text-sm transition-colors">About Us</a>
                     <a href="#programmes" class="text-darkBrown hover:text-brandOrange font-semibold text-sm transition-colors">Programmes</a>
                     <a href="#gallery" class="text-darkBrown hover:text-brandOrange font-semibold text-sm transition-colors">Gallery</a>
                 </div>
-
-                <!-- Right: Desktop Social Icons & Action Button -->
                 <div class="hidden lg:flex items-center space-x-6 border-l pl-6 border-gray-200">
                     <a href="https://www.linkedin.com/in/suluhisho-cbo-335155308?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="text-deepGreen hover:text-brandOrange text-xl transition-colors"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://www.facebook.com/suluhishoyeocbo" target="_blank" class="text-deepGreen hover:text-brandOrange text-xl transition-colors"><i class="fa-brands fa-facebook"></i></a>
                     <a href="https://www.tiktok.com/@suluhisho1?_r=1&_t=ZS-97GALHbrpAH" target="_blank" class="text-deepGreen hover:text-brandOrange text-xl transition-colors"><i class="fa-brands fa-tiktok"></i></a>
                     <a href="https://wa.me/254712561922" target="_blank" class="bg-brandOrange text-white hover:bg-brightGreen px-6 py-2.5 rounded-full text-sm font-bold transition-all shadow-md">Get Involved</a>
                 </div>
-
-                <!-- Mobile Menu Button (Hamburger) -->
                 <div class="lg:hidden flex items-center">
                     <button id="mobile-menu-btn" class="text-deepGreen hover:text-brandOrange text-3xl focus:outline-none">
                         <i class="fa-solid fa-bars"></i>
@@ -76,14 +69,12 @@
             </div>
         </div>
 
-        <!-- Mobile Dropdown Container -->
         <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 shadow-xl absolute w-full left-0 top-24 pb-6 px-4">
             <div class="flex flex-col space-y-4 pt-4">
                 <a href="#" class="mobile-link text-darkBrown hover:text-brandOrange font-semibold text-lg">Home</a>
                 <a href="#about" class="mobile-link text-darkBrown hover:text-brandOrange font-semibold text-lg">About Us</a>
                 <a href="#programmes" class="mobile-link text-darkBrown hover:text-brandOrange font-semibold text-lg">Programmes</a>
                 <a href="#gallery" class="mobile-link text-darkBrown hover:text-brandOrange font-semibold text-lg">Gallery</a>
-                
                 <div class="border-t border-gray-200 pt-4 flex space-x-6">
                     <a href="https://www.linkedin.com/in/suluhisho-cbo-335155308?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="text-deepGreen hover:text-brandOrange text-2xl"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://www.facebook.com/suluhishoyeocbo" target="_blank" class="text-deepGreen hover:text-brandOrange text-2xl"><i class="fa-brands fa-facebook"></i></a>
@@ -94,30 +85,35 @@
         </div>
     </nav>
 
-    <!-- HERO SECTION WITH VERY LIGHT GREEN OVERLAY -->
-    <header class="relative pt-40 pb-32 px-4 text-center overflow-hidden min-h-[80vh] flex items-center">
+    <!-- HERO SECTION WITH VISIBLE SLIDER AND FROSTED GLASS -->
+    <header class="relative pt-40 pb-32 px-4 text-center overflow-hidden min-h-[85vh] flex items-center">
+        
+        <!-- Background Slider (Fixed spaces in image names with %20 so browsers load them properly) -->
         <div id="hero-slider" class="absolute inset-0 z-0">
-            <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-100" style="background-image: url('The waste management team.jpeg');"></div>
-            <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('With the community .jpeg');"></div>
-            <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('Garbage collection.jpeg');"></div>
-            <!-- Light green overlay to make the deep green text pop while images faintly show through -->
-            <div class="absolute inset-0 bg-lightGreen/85"></div>
+            <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-100" style="background-image: url('The%20waste%20management%20team.jpeg');"></div>
+            <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('With%20the%20community%20.jpeg');"></div>
+            <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('Garbage%20collection.jpeg');"></div>
+            
+            <!-- Very light overlay just to take the edge off the photos -->
+            <div class="absolute inset-0 bg-lightGreen/30"></div>
         </div>
-        <div class="relative max-w-5xl mx-auto z-10 w-full">
+
+        <!-- Text Content inside a Frosted Glass Container -->
+        <div class="relative max-w-5xl mx-auto z-10 w-full bg-white/70 backdrop-blur-md p-8 md:p-14 rounded-3xl shadow-2xl border border-white/60">
             <p class="text-xs md:text-sm font-bold tracking-[0.2em] text-brandOrange uppercase mb-6">
                 Youth • Elderly • Environment • Climate Resilience
             </p>
-            <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold text-deepGreen leading-[1.1] tracking-tight mb-8 drop-shadow-sm">
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold text-deepGreen leading-[1.1] tracking-tight mb-8">
                 Bridging Generations.<br>
                 Building Sustainable<br>
                 Communities.
             </h1>
-            <p class="text-lg md:text-xl text-darkBrown/80 max-w-3xl mx-auto mb-10 leading-relaxed">
+            <p class="text-lg md:text-xl text-darkBrown font-medium max-w-3xl mx-auto mb-10 leading-relaxed">
                 Suluhisho Youth and Elderly Empowerment is a community-based organization working alongside underserved communities in Mombasa and Kwale to improve livelihoods, promote green enterprise, and protect our coastal environment.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
                 <a href="#programmes" class="bg-brandOrange text-white hover:bg-deepGreen px-8 py-4 rounded-full font-bold text-lg transition-all shadow-lg">Explore Our Work</a>
-                <a href="https://wa.me/254712561922?text=Hello%20Suluhisho!%20I%20would%20like%20to%20donate." target="_blank" class="bg-transparent text-deepGreen border-2 border-deepGreen hover:bg-deepGreen hover:text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-md">Support Our Cause</a>
+                <a href="https://wa.me/254712561922?text=Hello%20Suluhisho!%20I%20would%20like%20to%20donate." target="_blank" class="bg-white text-deepGreen border-2 border-deepGreen hover:bg-deepGreen hover:text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-md">Support Our Cause</a>
             </div>
         </div>
     </header>

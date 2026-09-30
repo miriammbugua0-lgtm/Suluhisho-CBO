@@ -11,7 +11,15 @@
         tailwind.config = {
             theme: {
                 extend: {
-                    colors: { brandGreen: '#15803d', brandBlue: '#1e3a8a', brandGold: '#eab308' },
+                    colors: { 
+                        deepGreen: '#08733D', 
+                        brightGreen: '#61B82F', 
+                        brandOrange: '#FF7514',
+                        oliveGreen: '#536B2F',
+                        darkBrown: '#4A1B12',
+                        lightOlive: '#F4F6F0',
+                        lightGreen: '#EAF3ED'
+                    },
                     fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] }
                 }
             }
@@ -31,37 +39,37 @@
         }
     </style>
 </head>
-<body class="font-sans text-gray-800 antialiased bg-white">
+<body class="font-sans text-darkBrown antialiased bg-white">
 
     <!-- NAVIGATION WITH MOBILE MENU -->
-    <nav class="bg-white/90 backdrop-blur-md fixed w-full z-50 top-0 border-b border-gray-100 shadow-sm">
+    <nav class="bg-white/95 backdrop-blur-md fixed w-full z-50 top-0 border-b border-gray-100 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-24 items-center">
                 <!-- Left: Logo & Brand Name -->
                 <div class="flex items-center gap-3">
                     <img class="h-16 w-auto" src="logo.jpg" alt="Suluhisho Logo">
-                    <span class="font-extrabold text-2xl text-brandBlue tracking-tight">SULUHISHO CBO</span>
+                    <span class="font-extrabold text-2xl text-deepGreen tracking-tight">SULUHISHO CBO</span>
                 </div>
 
                 <!-- Center: Desktop Navigation Links -->
                 <div class="hidden lg:flex space-x-8 items-center">
-                    <a href="#" class="text-brandBlue hover:text-brandGold font-semibold text-sm transition-colors">Home</a>
-                    <a href="#about" class="text-brandBlue hover:text-brandGold font-semibold text-sm transition-colors">About Us</a>
-                    <a href="#programmes" class="text-brandBlue hover:text-brandGold font-semibold text-sm transition-colors">Programmes</a>
-                    <a href="#gallery" class="text-brandBlue hover:text-brandGold font-semibold text-sm transition-colors">Gallery</a>
+                    <a href="#" class="text-darkBrown hover:text-brandOrange font-semibold text-sm transition-colors">Home</a>
+                    <a href="#about" class="text-darkBrown hover:text-brandOrange font-semibold text-sm transition-colors">About Us</a>
+                    <a href="#programmes" class="text-darkBrown hover:text-brandOrange font-semibold text-sm transition-colors">Programmes</a>
+                    <a href="#gallery" class="text-darkBrown hover:text-brandOrange font-semibold text-sm transition-colors">Gallery</a>
                 </div>
 
                 <!-- Right: Desktop Social Icons & Action Button -->
                 <div class="hidden lg:flex items-center space-x-6 border-l pl-6 border-gray-200">
-                    <a href="https://www.linkedin.com/in/suluhisho-cbo-335155308?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="text-brandBlue hover:text-brandGreen text-xl transition-colors"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.facebook.com/suluhishoyeocbo" target="_blank" class="text-brandBlue hover:text-brandGreen text-xl transition-colors"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.tiktok.com/@suluhisho1?_r=1&_t=ZS-97GALHbrpAH" target="_blank" class="text-brandBlue hover:text-brandGreen text-xl transition-colors"><i class="fa-brands fa-tiktok"></i></a>
-                    <a href="https://wa.me/254712561922" target="_blank" class="bg-brandBlue text-white hover:bg-brandGreen px-6 py-2.5 rounded-full text-sm font-bold transition-all shadow-md">Get Involved</a>
+                    <a href="https://www.linkedin.com/in/suluhisho-cbo-335155308?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="text-deepGreen hover:text-brandOrange text-xl transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/suluhishoyeocbo" target="_blank" class="text-deepGreen hover:text-brandOrange text-xl transition-colors"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@suluhisho1?_r=1&_t=ZS-97GALHbrpAH" target="_blank" class="text-deepGreen hover:text-brandOrange text-xl transition-colors"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://wa.me/254712561922" target="_blank" class="bg-brandOrange text-white hover:bg-brightGreen px-6 py-2.5 rounded-full text-sm font-bold transition-all shadow-md">Get Involved</a>
                 </div>
 
                 <!-- Mobile Menu Button (Hamburger) -->
                 <div class="lg:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-brandBlue hover:text-brandGold text-3xl focus:outline-none">
+                    <button id="mobile-menu-btn" class="text-deepGreen hover:text-brandOrange text-3xl focus:outline-none">
                         <i class="fa-solid fa-bars"></i>
                     </button>
                 </div>
@@ -71,88 +79,91 @@
         <!-- Mobile Dropdown Container -->
         <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 shadow-xl absolute w-full left-0 top-24 pb-6 px-4">
             <div class="flex flex-col space-y-4 pt-4">
-                <a href="#" class="mobile-link text-brandBlue hover:text-brandGold font-semibold text-lg">Home</a>
-                <a href="#about" class="mobile-link text-brandBlue hover:text-brandGold font-semibold text-lg">About Us</a>
-                <a href="#programmes" class="mobile-link text-brandBlue hover:text-brandGold font-semibold text-lg">Programmes</a>
-                <a href="#gallery" class="mobile-link text-brandBlue hover:text-brandGold font-semibold text-lg">Gallery</a>
+                <a href="#" class="mobile-link text-darkBrown hover:text-brandOrange font-semibold text-lg">Home</a>
+                <a href="#about" class="mobile-link text-darkBrown hover:text-brandOrange font-semibold text-lg">About Us</a>
+                <a href="#programmes" class="mobile-link text-darkBrown hover:text-brandOrange font-semibold text-lg">Programmes</a>
+                <a href="#gallery" class="mobile-link text-darkBrown hover:text-brandOrange font-semibold text-lg">Gallery</a>
                 
                 <div class="border-t border-gray-200 pt-4 flex space-x-6">
-                    <a href="https://www.linkedin.com/in/suluhisho-cbo-335155308?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="text-brandBlue hover:text-brandGreen text-2xl"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.facebook.com/suluhishoyeocbo" target="_blank" class="text-brandBlue hover:text-brandGreen text-2xl"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.tiktok.com/@suluhisho1?_r=1&_t=ZS-97GALHbrpAH" target="_blank" class="text-brandBlue hover:text-brandGreen text-2xl"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.linkedin.com/in/suluhisho-cbo-335155308?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="text-deepGreen hover:text-brandOrange text-2xl"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/suluhishoyeocbo" target="_blank" class="text-deepGreen hover:text-brandOrange text-2xl"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@suluhisho1?_r=1&_t=ZS-97GALHbrpAH" target="_blank" class="text-deepGreen hover:text-brandOrange text-2xl"><i class="fa-brands fa-tiktok"></i></a>
                 </div>
-                <a href="https://wa.me/254712561922" target="_blank" class="bg-brandBlue text-white hover:bg-brandGreen text-center py-3 rounded-md font-bold mt-4 shadow-md block">Get Involved</a>
+                <a href="https://wa.me/254712561922" target="_blank" class="bg-brandOrange text-white hover:bg-brightGreen text-center py-3 rounded-md font-bold mt-4 shadow-md block">Get Involved</a>
             </div>
         </div>
     </nav>
 
-    <!-- HERO SECTION WITH IMAGE SLIDER -->
+    <!-- HERO SECTION WITH VERY LIGHT GREEN OVERLAY -->
     <header class="relative pt-40 pb-32 px-4 text-center overflow-hidden min-h-[80vh] flex items-center">
         <div id="hero-slider" class="absolute inset-0 z-0">
             <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-100" style="background-image: url('The waste management team.jpeg');"></div>
             <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('With the community .jpeg');"></div>
             <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('Garbage collection.jpeg');"></div>
-            <div class="absolute inset-0 bg-brandBlue/80"></div>
+            <!-- Light green overlay to make the deep green text pop while images faintly show through -->
+            <div class="absolute inset-0 bg-lightGreen/85"></div>
         </div>
         <div class="relative max-w-5xl mx-auto z-10 w-full">
-            <p class="text-xs md:text-sm font-bold tracking-[0.2em] text-brandGold uppercase mb-6">
+            <p class="text-xs md:text-sm font-bold tracking-[0.2em] text-brandOrange uppercase mb-6">
                 Youth • Elderly • Environment • Climate Resilience
             </p>
-            <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-[1.1] tracking-tight mb-8 drop-shadow-lg">
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold text-deepGreen leading-[1.1] tracking-tight mb-8 drop-shadow-sm">
                 Bridging Generations.<br>
                 Building Sustainable<br>
                 Communities.
             </h1>
-            <p class="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto mb-10 leading-relaxed">
+            <p class="text-lg md:text-xl text-darkBrown/80 max-w-3xl mx-auto mb-10 leading-relaxed">
                 Suluhisho Youth and Elderly Empowerment is a community-based organization working alongside underserved communities in Mombasa and Kwale to improve livelihoods, promote green enterprise, and protect our coastal environment.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#programmes" class="bg-brandGold text-brandBlue hover:bg-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-lg">Explore Our Work</a>
-                <a href="https://wa.me/254712561922?text=Hello%20Suluhisho!%20I%20would%20like%20to%20donate." target="_blank" class="bg-transparent text-white border-2 border-white hover:bg-white hover:text-brandBlue px-8 py-4 rounded-full font-bold text-lg transition-all shadow-md">Support Our Cause</a>
+                <a href="#programmes" class="bg-brandOrange text-white hover:bg-deepGreen px-8 py-4 rounded-full font-bold text-lg transition-all shadow-lg">Explore Our Work</a>
+                <a href="https://wa.me/254712561922?text=Hello%20Suluhisho!%20I%20would%20like%20to%20donate." target="_blank" class="bg-transparent text-deepGreen border-2 border-deepGreen hover:bg-deepGreen hover:text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-md">Support Our Cause</a>
             </div>
         </div>
     </header>
 
+    <!-- ABOUT SECTION -->
     <section id="about" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12">
-            <div class="bg-slate-50 p-10 rounded-2xl border-t-4 border-brandGreen shadow-sm hover:shadow-md transition-shadow">
-                <h3 class="text-2xl font-extrabold text-brandGreen mb-4"><i class="fa-solid fa-eye mr-3"></i>Our Vision</h3>
-                <p class="text-gray-600 text-lg leading-relaxed">A community where youth and elderly persons collaborate harmoniously to create sustainable livelihoods and inclusive development.</p>
+            <div class="bg-white p-10 rounded-2xl border-t-4 border-deepGreen shadow-lg hover:shadow-xl transition-shadow">
+                <h3 class="text-2xl font-extrabold text-deepGreen mb-4"><i class="fa-solid fa-eye mr-3 text-brandOrange"></i>Our Vision</h3>
+                <p class="text-darkBrown/90 text-lg leading-relaxed">A community where youth and elderly persons collaborate harmoniously to create sustainable livelihoods and inclusive development.</p>
             </div>
-            <div class="bg-slate-50 p-10 rounded-2xl border-t-4 border-brandBlue shadow-sm hover:shadow-md transition-shadow">
-                <h3 class="text-2xl font-extrabold text-brandBlue mb-4"><i class="fa-solid fa-bullseye mr-3"></i>Our Mission</h3>
-                <p class="text-gray-600 text-lg leading-relaxed">To empower women, girls, youth, and elderly persons with skills, opportunities, and sustainable solutions that improve livelihoods, strengthen communities, and protect the environment.</p>
+            <div class="bg-white p-10 rounded-2xl border-t-4 border-deepGreen shadow-lg hover:shadow-xl transition-shadow">
+                <h3 class="text-2xl font-extrabold text-deepGreen mb-4"><i class="fa-solid fa-bullseye mr-3 text-brandOrange"></i>Our Mission</h3>
+                <p class="text-darkBrown/90 text-lg leading-relaxed">To empower women, girls, youth, and elderly persons with skills, opportunities, and sustainable solutions that improve livelihoods, strengthen communities, and protect the environment.</p>
             </div>
         </div>
     </section>
 
-    <section id="programmes" class="py-24 bg-slate-50">
+    <!-- PROGRAMMES SECTION -->
+    <section id="programmes" class="py-24 bg-lightOlive">
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-extrabold text-brandBlue mb-4">Our Core Programmes</h2>
-                <div class="w-24 h-1.5 bg-brandGold mx-auto rounded-full"></div>
+                <h2 class="text-4xl font-extrabold text-deepGreen mb-4">Our Core Programmes</h2>
+                <div class="w-24 h-1.5 bg-brandOrange mx-auto rounded-full"></div>
             </div>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-2xl shadow-sm p-8 border border-gray-100 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
-                    <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mb-6">
-                        <i class="fa-solid fa-recycle text-2xl text-brandGreen"></i>
+                <div class="bg-deepGreen rounded-2xl shadow-lg p-8 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+                    <div class="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-recycle text-2xl text-brandOrange"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-brandBlue mb-4">Green Waste Management</h3>
-                    <p class="text-gray-600 leading-relaxed">Promoting waste segregation, collection, recycling, and composting of organic waste into high-quality fertilizer.</p>
+                    <h3 class="text-xl font-bold text-white mb-4">Green Waste Management</h3>
+                    <p class="text-white/80 leading-relaxed">Promoting waste segregation, collection, recycling, and composting of organic waste into high-quality fertilizer.</p>
                 </div>
-                <div class="bg-white rounded-2xl shadow-sm p-8 border border-gray-100 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
-                    <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-6">
-                        <i class="fa-solid fa-seedling text-2xl text-brandBlue"></i>
+                <div class="bg-deepGreen rounded-2xl shadow-lg p-8 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+                    <div class="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-seedling text-2xl text-brandOrange"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-brandBlue mb-4">Green Skills & Livelihoods</h3>
-                    <p class="text-gray-600 leading-relaxed">Providing practical training in urban farming, composting, upcycling, entrepreneurship, and financial literacy.</p>
+                    <h3 class="text-xl font-bold text-white mb-4">Green Skills & Livelihoods</h3>
+                    <p class="text-white/80 leading-relaxed">Providing practical training in urban farming, composting, upcycling, entrepreneurship, and financial literacy.</p>
                 </div>
-                <div class="bg-white rounded-2xl shadow-sm p-8 border border-gray-100 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
-                    <div class="w-14 h-14 bg-yellow-100 rounded-full flex items-center justify-center mb-6">
-                        <i class="fa-solid fa-earth-africa text-2xl text-brandGold"></i>
+                <div class="bg-deepGreen rounded-2xl shadow-lg p-8 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+                    <div class="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-earth-africa text-2xl text-brandOrange"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-brandBlue mb-4">Climate Resilience</h3>
-                    <p class="text-gray-600 leading-relaxed">Mobilizing communities for beach clean-ups, mangrove restoration, and climate-smart agriculture.</p>
+                    <h3 class="text-xl font-bold text-white mb-4">Climate Resilience</h3>
+                    <p class="text-white/80 leading-relaxed">Mobilizing communities for beach clean-ups, mangrove restoration, and climate-smart agriculture.</p>
                 </div>
             </div>
         </div>
@@ -161,59 +172,60 @@
     <!-- INFINITE SLIDING GALLERY SECTION -->
     <section id="gallery" class="py-24 bg-white overflow-hidden">
         <div class="text-center mb-16">
-            <h2 class="text-4xl font-extrabold text-brandBlue mb-4">Our Impact in Pictures</h2>
-            <div class="w-24 h-1.5 bg-brandGold mx-auto rounded-full"></div>
+            <h2 class="text-4xl font-extrabold text-deepGreen mb-4">Our Impact in Pictures</h2>
+            <div class="w-24 h-1.5 bg-brandOrange mx-auto rounded-full"></div>
         </div>
         <div class="relative w-full flex overflow-hidden">
             <div class="flex animate-scroll gap-6 px-3">
                 <!-- SET 1 -->
-                <img src="Garbage collection.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
-                <img src="Moments.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
-                <img src="Our resources.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
-                <img src="Partnerships.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
-                <img src="Recycling.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
-                <img src="The waste management team.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
-                <img src="Waste Management.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
-                <img src="Waste Packaging 1.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
-                <img src="Waste Packaging.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
-                <img src="Waste sorting .jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
-                <img src="we thrive on wisdome.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
-                <img src="With the community .jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
+                <img src="Garbage collection.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Gallery Image">
+                <img src="Moments.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Gallery Image">
+                <img src="Our resources.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Gallery Image">
+                <img src="Partnerships.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Gallery Image">
+                <img src="Recycling.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Gallery Image">
+                <img src="The waste management team.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Gallery Image">
+                <img src="Waste Management.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Gallery Image">
+                <img src="Waste Packaging 1.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Gallery Image">
+                <img src="Waste Packaging.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Gallery Image">
+                <img src="Waste sorting .jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Gallery Image">
+                <img src="we thrive on wisdome.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Gallery Image">
+                <img src="With the community .jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Gallery Image">
                 <!-- SET 2 (Duplicate) -->
-                <img src="Garbage collection.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
-                <img src="Moments.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
-                <img src="Our resources.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
-                <img src="Partnerships.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
-                <img src="Recycling.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
-                <img src="The waste management team.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
-                <img src="Waste Management.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
-                <img src="Waste Packaging 1.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
-                <img src="Waste Packaging.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
-                <img src="Waste sorting .jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
-                <img src="we thrive on wisdome.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
-                <img src="With the community .jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
+                <img src="Garbage collection.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Gallery Image">
+                <img src="Moments.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Gallery Image">
+                <img src="Our resources.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Gallery Image">
+                <img src="Partnerships.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Gallery Image">
+                <img src="Recycling.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Gallery Image">
+                <img src="The waste management team.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Gallery Image">
+                <img src="Waste Management.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Gallery Image">
+                <img src="Waste Packaging 1.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Gallery Image">
+                <img src="Waste Packaging.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Gallery Image">
+                <img src="Waste sorting .jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Gallery Image">
+                <img src="we thrive on wisdome.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Gallery Image">
+                <img src="With the community .jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Gallery Image">
             </div>
         </div>
     </section>
 
-    <footer class="bg-brandBlue text-gray-300 py-16">
+    <!-- FOOTER -->
+    <footer class="bg-deepGreen text-white/80 py-16">
         <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-12">
             <div>
                 <img src="logo.jpg" alt="Suluhisho Logo" class="h-16 mb-6 rounded bg-white p-1">
-                <p class="mb-3"><i class="fa-solid fa-location-dot mr-3 text-brandGold"></i> Kiembeni, Mombasa County, Kenya</p>
-                <p class="mb-3"><i class="fa-solid fa-envelope mr-3 text-brandGold"></i> suluhishoyeo19@gmail.com</p>
-                <p><i class="fa-solid fa-phone mr-3 text-brandGold"></i> +254 712 561 922</p>
+                <p class="mb-3"><i class="fa-solid fa-location-dot mr-3 text-brandOrange"></i> Kiembeni, Mombasa County, Kenya</p>
+                <p class="mb-3"><i class="fa-solid fa-envelope mr-3 text-brandOrange"></i> suluhishoyeo19@gmail.com</p>
+                <p><i class="fa-solid fa-phone mr-3 text-brandOrange"></i> +254 712 561 922</p>
             </div>
             <div>
                 <h4 class="text-white text-xl font-bold mb-6">Support Our Cause</h4>
-                <a href="https://wa.me/254712561922" target="_blank" class="inline-block bg-brandGold text-brandBlue px-6 py-3 rounded-full font-bold hover:bg-yellow-400 transition-colors shadow-md">Contact Us via WhatsApp</a>
+                <a href="https://wa.me/254712561922" target="_blank" class="inline-block bg-brandOrange text-white px-6 py-3 rounded-full font-bold hover:bg-brightGreen transition-colors shadow-md">Contact Us via WhatsApp</a>
             </div>
             <div>
                 <h4 class="text-white text-xl font-bold mb-6">Connect With Us</h4>
                 <div class="flex space-x-6">
-                    <a href="https://www.linkedin.com/in/suluhisho-cbo-335155308?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="text-3xl hover:text-brandGold transition-transform hover:scale-110"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.facebook.com/suluhishoyeocbo" target="_blank" class="text-3xl hover:text-brandGold transition-transform hover:scale-110"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.tiktok.com/@suluhisho1?_r=1&_t=ZS-97GALHbrpAH" target="_blank" class="text-3xl hover:text-brandGold transition-transform hover:scale-110"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.linkedin.com/in/suluhisho-cbo-335155308?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="text-3xl text-brandOrange hover:text-brightGreen transition-transform hover:scale-110"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/suluhishoyeocbo" target="_blank" class="text-3xl text-brandOrange hover:text-brightGreen transition-transform hover:scale-110"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@suluhisho1?_r=1&_t=ZS-97GALHbrpAH" target="_blank" class="text-3xl text-brandOrange hover:text-brightGreen transition-transform hover:scale-110"><i class="fa-brands fa-tiktok"></i></a>
                 </div>
             </div>
         </div>

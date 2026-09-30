@@ -1,128 +1,133 @@
-<!-- PREMIUM NAVIGATION BAR (Like the HERA reference) -->
-<nav class="bg-white/90 backdrop-blur-md fixed w-full z-50 top-0 border-b border-gray-100 shadow-sm">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between h-24 items-center">
-            
-            <!-- Left: Logo & Brand Name -->
-            <div class="flex items-center gap-3">
-                <img class="h-16 w-auto" src="logo.jpeg" alt="Suluhisho Logo">
-                <span class="font-extrabold text-2xl text-brandBlue tracking-tight">SULUHISHO CBO</span>
-            </div>
-            <!-- Center: Navigation Links -->
-            <div class="hidden lg:flex space-x-8 items-center">
-                <a href="#" class="text-brandBlue hover:text-brandGold font-semibold text-sm transition-colors">Home</a>
-                <a href="#about" class="text-brandBlue hover:text-brandGold font-semibold text-sm transition-colors">About Us</a>
-                <a href="#programmes" class="text-brandBlue hover:text-brandGold font-semibold text-sm transition-colors">Programmes</a>
-                <a href="#impact" class="text-brandBlue hover:text-brandGold font-semibold text-sm transition-colors">Our Impact</a>
-            </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suluhisho Youth and Elderly Empowerment CBO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { brandGreen: '#15803d', brandBlue: '#1e3a8a', brandGold: '#eab308' },
+                    fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-white">
 
-            <!-- Right: Social Icons & Action Button -->
-            <div class="hidden lg:flex items-center space-x-6 border-l pl-6 border-gray-200">
-                <a href="#" class="text-brandBlue hover:text-brandGreen text-xl transition-colors"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#" class="text-brandBlue hover:text-brandGreen text-xl transition-colors"><i class="fa-brands fa-tiktok"></i></a>
-                <a href="[https://wa.me/254712561922](https://wa.me/254712561922)" target="_blank" class="bg-brandBlue text-white hover:bg-brandGreen px-6 py-2.5 rounded-full text-sm font-bold transition-all shadow-md">Get Involved</a>
-            </div>
-
-        </div>
-    </div>
-</nav>
-
-<!-- CLEAN TYPOGRAPHY HERO SECTION -->
-<header class="relative pt-40 pb-32 px-4 text-center bg-gradient-to-b from-white to-green-50 overflow-hidden">
-    <div class="relative max-w-5xl mx-auto z-10">
-        
-        <!-- Pre-heading with dots -->
-        <p class="text-xs md:text-sm font-bold tracking-[0.2em] text-brandGreen uppercase mb-6">
-            Youth • Elderly • Environment • Climate Resilience
-        </p>
-        
-        <!-- Massive Bold Heading -->
-        <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold text-brandBlue leading-[1.1] tracking-tight mb-8">
-            Bridging Generations.<br>
-            Building Sustainable<br>
-            Communities.
-        </h1>
-        
-        <!-- Subtext Paragraph -->
-        <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-10 leading-relaxed">
-            Suluhisho Youth and Elderly Empowerment is a community-based organization working alongside underserved communities in Mombasa and Kwale to improve livelihoods, promote green enterprise, and protect our coastal environment.
-        </p>
-        
-        <!-- Action Buttons -->
-        <div class="flex flex-col sm:flex-row justify-center gap-4">
-            <a href="#programmes" class="bg-brandBlue text-white hover:bg-brandGreen px-8 py-4 rounded-full font-bold text-lg transition-all shadow-lg">Explore Our Work</a>
-            <a href="[https://wa.me/254712561922?text=Hello%20Suluhisho!%20I%20would%20like%20to%20donate](https://wa.me/254712561922?text=Hello%20Suluhisho!%20I%20would%20like%20to%20donate)." target="_blank" class="bg-white text-brandBlue border-2 border-brandBlue hover:bg-brandGold hover:border-brandGold hover:text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-md">Support Our Cause</a>
-        </div>
-    </div>
-</header>
-
-<!-- ABOUT SECTION -->
-<section id="about" class="py-24 bg-white">
-    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12">
-        <div class="bg-slate-50 p-10 rounded-2xl border-t-4 border-brandGreen shadow-sm hover:shadow-md transition-shadow">
-            <h3 class="text-2xl font-extrabold text-brandGreen mb-4"><i class="fa-solid fa-eye mr-3"></i>Our Vision</h3>
-            <p class="text-gray-600 text-lg leading-relaxed">A community where youth and elderly persons collaborate harmoniously to create sustainable livelihoods and inclusive development.</p>
-        </div>
-        <div class="bg-slate-50 p-10 rounded-2xl border-t-4 border-brandBlue shadow-sm hover:shadow-md transition-shadow">
-            <h3 class="text-2xl font-extrabold text-brandBlue mb-4"><i class="fa-solid fa-bullseye mr-3"></i>Our Mission</h3>
-            <p class="text-gray-600 text-lg leading-relaxed">To empower women, girls, youth, and elderly persons with skills, opportunities, and sustainable solutions that improve livelihoods, strengthen communities, and protect the environment.</p>
-        </div>
-    </div>
-</section>
-
-<!-- PROGRAMMES SECTION -->
-<section id="programmes" class="py-24 bg-slate-50">
-    <div class="max-w-7xl mx-auto px-4">
-        <div class="text-center mb-16">
-            <h2 class="text-4xl font-extrabold text-brandBlue mb-4">Our Core Programmes</h2>
-            <div class="w-24 h-1.5 bg-brandGold mx-auto rounded-full"></div>
-        </div>
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-white rounded-2xl shadow-sm p-8 border border-gray-100 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
-                <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mb-6">
-                    <i class="fa-solid fa-recycle text-2xl text-brandGreen"></i>
+    <nav class="bg-white/90 backdrop-blur-md fixed w-full z-50 top-0 border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-24 items-center">
+                <div class="flex items-center gap-3">
+                    <img class="h-16 w-auto" src="logo.jpeg" alt="Suluhisho Logo">
+                    <span class="font-extrabold text-2xl text-brandBlue tracking-tight">SULUHISHO CBO</span>
                 </div>
-                <h3 class="text-xl font-bold text-brandBlue mb-4">Green Waste Management</h3>
-                <p class="text-gray-600 leading-relaxed">Promoting waste segregation, collection, recycling, and composting of organic waste into high-quality fertilizer.</p>
-            </div>
-            <div class="bg-white rounded-2xl shadow-sm p-8 border border-gray-100 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
-                <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-6">
-                    <i class="fa-solid fa-seedling text-2xl text-brandBlue"></i>
+                <div class="hidden lg:flex space-x-8 items-center">
+                    <a href="#" class="text-brandBlue hover:text-brandGold font-semibold text-sm transition-colors">Home</a>
+                    <a href="#about" class="text-brandBlue hover:text-brandGold font-semibold text-sm transition-colors">About Us</a>
+                    <a href="#programmes" class="text-brandBlue hover:text-brandGold font-semibold text-sm transition-colors">Programmes</a>
                 </div>
-                <h3 class="text-xl font-bold text-brandBlue mb-4">Green Skills & Livelihoods</h3>
-                <p class="text-gray-600 leading-relaxed">Providing practical training in urban farming, composting, upcycling, entrepreneurship, and financial literacy.</p>
-            </div>
-            <div class="bg-white rounded-2xl shadow-sm p-8 border border-gray-100 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
-                <div class="w-14 h-14 bg-yellow-100 rounded-full flex items-center justify-center mb-6">
-                    <i class="fa-solid fa-earth-africa text-2xl text-brandGold"></i>
+                <div class="hidden lg:flex items-center space-x-6 border-l pl-6 border-gray-200">
+                    <a href="#" class="text-brandBlue hover:text-brandGreen text-xl transition-colors"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="text-brandBlue hover:text-brandGreen text-xl transition-colors"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://wa.me/254712561922" target="_blank" class="bg-brandBlue text-white hover:bg-brandGreen px-6 py-2.5 rounded-full text-sm font-bold transition-all shadow-md">Get Involved</a>
                 </div>
-                <h3 class="text-xl font-bold text-brandBlue mb-4">Climate Resilience</h3>
-                <p class="text-gray-600 leading-relaxed">Mobilizing communities for beach clean-ups, mangrove restoration, and climate-smart agriculture.</p>
             </div>
         </div>
-    </div>
-</section>
+    </nav>
 
-<!-- FOOTER -->
-<footer class="bg-brandBlue text-gray-300 py-16">
-    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-12">
-        <div>
-            <img src="logo.jpeg" alt="Suluhisho Logo" class="h-16 mb-6 rounded bg-white p-1">
-            <p class="mb-3"><i class="fa-solid fa-location-dot mr-3 text-brandGold"></i> Kiembeni, Mombasa County, Kenya</p>
-            <p class="mb-3"><i class="fa-solid fa-envelope mr-3 text-brandGold"></i> suluhishoyeo19@gmail.com</p>
-            <p><i class="fa-solid fa-phone mr-3 text-brandGold"></i> +254 712 561 922</p>
-        </div>
-        <div>
-            <h4 class="text-white text-xl font-bold mb-6">Support Our Cause</h4>
-            <a href="[https://wa.me/254712561922](https://wa.me/254712561922)" target="_blank" class="inline-block bg-brandGold text-brandBlue px-6 py-3 rounded-full font-bold hover:bg-yellow-400 transition-colors shadow-md">Contact Us via WhatsApp</a>
-        </div>
-        <div>
-            <h4 class="text-white text-xl font-bold mb-6">Connect With Us</h4>
-            <div class="flex space-x-6">
-                <a href="#" class="text-3xl hover:text-brandGold transition-transform hover:scale-110"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#" class="text-3xl hover:text-brandGold transition-transform hover:scale-110"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#" class="text-3xl hover:text-brandGold transition-transform hover:scale-110"><i class="fa-brands fa-tiktok"></i></a>
+    <header class="relative pt-40 pb-32 px-4 text-center bg-gradient-to-b from-white to-green-50 overflow-hidden">
+        <div class="relative max-w-5xl mx-auto z-10">
+            <p class="text-xs md:text-sm font-bold tracking-[0.2em] text-brandGreen uppercase mb-6">
+                Youth • Elderly • Environment • Climate Resilience
+            </p>
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold text-brandBlue leading-[1.1] tracking-tight mb-8">
+                Bridging Generations.<br>
+                Building Sustainable<br>
+                Communities.
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-10 leading-relaxed">
+                Suluhisho Youth and Elderly Empowerment is a community-based organization working alongside underserved communities in Mombasa and Kwale to improve livelihoods, promote green enterprise, and protect our coastal environment.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#programmes" class="bg-brandBlue text-white hover:bg-brandGreen px-8 py-4 rounded-full font-bold text-lg transition-all shadow-lg">Explore Our Work</a>
+                <a href="https://wa.me/254712561922?text=Hello%20Suluhisho!%20I%20would%20like%20to%20donate." target="_blank" class="bg-white text-brandBlue border-2 border-brandBlue hover:bg-brandGold hover:border-brandGold hover:text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-md">Support Our Cause</a>
             </div>
         </div>
-    </div>
-</footer>
+    </header>
+
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12">
+            <div class="bg-slate-50 p-10 rounded-2xl border-t-4 border-brandGreen shadow-sm hover:shadow-md transition-shadow">
+                <h3 class="text-2xl font-extrabold text-brandGreen mb-4"><i class="fa-solid fa-eye mr-3"></i>Our Vision</h3>
+                <p class="text-gray-600 text-lg leading-relaxed">A community where youth and elderly persons collaborate harmoniously to create sustainable livelihoods and inclusive development.</p>
+            </div>
+            <div class="bg-slate-50 p-10 rounded-2xl border-t-4 border-brandBlue shadow-sm hover:shadow-md transition-shadow">
+                <h3 class="text-2xl font-extrabold text-brandBlue mb-4"><i class="fa-solid fa-bullseye mr-3"></i>Our Mission</h3>
+                <p class="text-gray-600 text-lg leading-relaxed">To empower women, girls, youth, and elderly persons with skills, opportunities, and sustainable solutions that improve livelihoods, strengthen communities, and protect the environment.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="programmes" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold text-brandBlue mb-4">Our Core Programmes</h2>
+                <div class="w-24 h-1.5 bg-brandGold mx-auto rounded-full"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl shadow-sm p-8 border border-gray-100 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+                    <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-recycle text-2xl text-brandGreen"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brandBlue mb-4">Green Waste Management</h3>
+                    <p class="text-gray-600 leading-relaxed">Promoting waste segregation, collection, recycling, and composting of organic waste into high-quality fertilizer.</p>
+                </div>
+                <div class="bg-white rounded-2xl shadow-sm p-8 border border-gray-100 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+                    <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-seedling text-2xl text-brandBlue"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brandBlue mb-4">Green Skills & Livelihoods</h3>
+                    <p class="text-gray-600 leading-relaxed">Providing practical training in urban farming, composting, upcycling, entrepreneurship, and financial literacy.</p>
+                </div>
+                <div class="bg-white rounded-2xl shadow-sm p-8 border border-gray-100 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+                    <div class="w-14 h-14 bg-yellow-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-earth-africa text-2xl text-brandGold"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brandBlue mb-4">Climate Resilience</h3>
+                    <p class="text-gray-600 leading-relaxed">Mobilizing communities for beach clean-ups, mangrove restoration, and climate-smart agriculture.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brandBlue text-gray-300 py-16">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-12">
+            <div>
+                <img src="logo.jpeg" alt="Suluhisho Logo" class="h-16 mb-6 rounded bg-white p-1">
+                <p class="mb-3"><i class="fa-solid fa-location-dot mr-3 text-brandGold"></i> Kiembeni, Mombasa County, Kenya</p>
+                <p class="mb-3"><i class="fa-solid fa-envelope mr-3 text-brandGold"></i> suluhishoyeo19@gmail.com</p>
+                <p><i class="fa-solid fa-phone mr-3 text-brandGold"></i> +254 712 561 922</p>
+            </div>
+            <div>
+                <h4 class="text-white text-xl font-bold mb-6">Support Our Cause</h4>
+                <a href="https://wa.me/254712561922" target="_blank" class="inline-block bg-brandGold text-brandBlue px-6 py-3 rounded-full font-bold hover:bg-yellow-400 transition-colors shadow-md">Contact Us via WhatsApp</a>
+            </div>
+            <div>
+                <h4 class="text-white text-xl font-bold mb-6">Connect With Us</h4>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-3xl hover:text-brandGold transition-transform hover:scale-110"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" class="text-3xl hover:text-brandGold transition-transform hover:scale-110"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="text-3xl hover:text-brandGold transition-transform hover:scale-110"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

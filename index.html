@@ -34,25 +34,55 @@
 </head>
 <body class="font-sans text-gray-800 antialiased bg-white">
 
+    <!-- NAVIGATION WITH MOBILE MENU -->
     <nav class="bg-white/90 backdrop-blur-md fixed w-full z-50 top-0 border-b border-gray-100 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-24 items-center">
+                <!-- Left: Logo & Brand Name -->
                 <div class="flex items-center gap-3">
                     <img class="h-16 w-auto" src="logo.jpeg" alt="Suluhisho Logo">
                     <span class="font-extrabold text-2xl text-brandBlue tracking-tight">SULUHISHO CBO</span>
                 </div>
+
+                <!-- Center: Desktop Navigation Links -->
                 <div class="hidden lg:flex space-x-8 items-center">
                     <a href="#" class="text-brandBlue hover:text-brandGold font-semibold text-sm transition-colors">Home</a>
                     <a href="#about" class="text-brandBlue hover:text-brandGold font-semibold text-sm transition-colors">About Us</a>
                     <a href="#programmes" class="text-brandBlue hover:text-brandGold font-semibold text-sm transition-colors">Programmes</a>
                     <a href="#gallery" class="text-brandBlue hover:text-brandGold font-semibold text-sm transition-colors">Gallery</a>
                 </div>
+
+                <!-- Right: Desktop Social Icons & Action Button -->
                 <div class="hidden lg:flex items-center space-x-6 border-l pl-6 border-gray-200">
                     <a href="https://www.linkedin.com/in/suluhisho-cbo-335155308?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="text-brandBlue hover:text-brandGreen text-xl transition-colors"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://www.facebook.com/suluhishoyeocbo" target="_blank" class="text-brandBlue hover:text-brandGreen text-xl transition-colors"><i class="fa-brands fa-facebook"></i></a>
                     <a href="https://www.tiktok.com/@suluhisho1?_r=1&_t=ZS-97GALHbrpAH" target="_blank" class="text-brandBlue hover:text-brandGreen text-xl transition-colors"><i class="fa-brands fa-tiktok"></i></a>
                     <a href="https://wa.me/254712561922" target="_blank" class="bg-brandBlue text-white hover:bg-brandGreen px-6 py-2.5 rounded-full text-sm font-bold transition-all shadow-md">Get Involved</a>
                 </div>
+
+                <!-- Mobile Menu Button (Hamburger) -->
+                <div class="lg:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-brandBlue hover:text-brandGold text-3xl focus:outline-none">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Container -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 shadow-xl absolute w-full left-0 top-24 pb-6 px-4">
+            <div class="flex flex-col space-y-4 pt-4">
+                <a href="#" class="mobile-link text-brandBlue hover:text-brandGold font-semibold text-lg">Home</a>
+                <a href="#about" class="mobile-link text-brandBlue hover:text-brandGold font-semibold text-lg">About Us</a>
+                <a href="#programmes" class="mobile-link text-brandBlue hover:text-brandGold font-semibold text-lg">Programmes</a>
+                <a href="#gallery" class="mobile-link text-brandBlue hover:text-brandGold font-semibold text-lg">Gallery</a>
+                
+                <div class="border-t border-gray-200 pt-4 flex space-x-6">
+                    <a href="https://www.linkedin.com/in/suluhisho-cbo-335155308?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="text-brandBlue hover:text-brandGreen text-2xl"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/suluhishoyeocbo" target="_blank" class="text-brandBlue hover:text-brandGreen text-2xl"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@suluhisho1?_r=1&_t=ZS-97GALHbrpAH" target="_blank" class="text-brandBlue hover:text-brandGreen text-2xl"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+                <a href="https://wa.me/254712561922" target="_blank" class="bg-brandBlue text-white hover:bg-brandGreen text-center py-3 rounded-md font-bold mt-4 shadow-md block">Get Involved</a>
             </div>
         </div>
     </nav>
@@ -135,11 +165,8 @@
             <h2 class="text-4xl font-extrabold text-brandBlue mb-4">Our Impact in Pictures</h2>
             <div class="w-24 h-1.5 bg-brandGold mx-auto rounded-full"></div>
         </div>
-        
         <div class="relative w-full flex overflow-hidden">
-            <!-- To make the infinite loop seamless, we list the images twice! -->
             <div class="flex animate-scroll gap-6 px-3">
-                
                 <!-- SET 1 -->
                 <img src="Garbage collection.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
                 <img src="Moments.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
@@ -153,8 +180,7 @@
                 <img src="Waste sorting .jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
                 <img src="we thrive on wisdome.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
                 <img src="With the community .jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
-
-                <!-- SET 2 (Duplicate to create the seamless loop) -->
+                <!-- SET 2 (Duplicate) -->
                 <img src="Garbage collection.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
                 <img src="Moments.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
                 <img src="Our resources.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
@@ -167,7 +193,6 @@
                 <img src="Waste sorting .jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
                 <img src="we thrive on wisdome.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
                 <img src="With the community .jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border-2 border-gray-50" alt="Suluhisho Gallery Image">
-                
             </div>
         </div>
     </section>
@@ -195,23 +220,46 @@
         </div>
     </footer>
 
-    <!-- Javascript for the Hero sliding photos -->
+    <!-- Javascript for Animations and Mobile Menu -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
+            // Background Image Slider Logic
             let currentSlide = 0;
             const slides = document.querySelectorAll('#hero-slider .slide');
-            
             if(slides.length > 0) {
                 setInterval(() => {
                     slides[currentSlide].classList.remove('opacity-100');
                     slides[currentSlide].classList.add('opacity-0');
-                    
                     currentSlide = (currentSlide + 1) % slides.length;
-                    
                     slides[currentSlide].classList.remove('opacity-0');
                     slides[currentSlide].classList.add('opacity-100');
                 }, 4000);
             }
+
+            // Mobile Menu Toggle Logic
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            const icon = btn.querySelector('i');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+                if (menu.classList.contains('hidden')) {
+                    icon.classList.remove('fa-xmark');
+                    icon.classList.add('fa-bars');
+                } else {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-xmark');
+                }
+            });
+
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                    icon.classList.remove('fa-xmark');
+                    icon.classList.add('fa-bars');
+                });
+            });
         });
     </script>
 </body>

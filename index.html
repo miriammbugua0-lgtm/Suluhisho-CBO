@@ -34,12 +34,14 @@
             0% { transform: translateX(-50%); }
             100% { transform: translateX(0); }
         }
+
+        /* FASTER MARQUEE SPEED (18 seconds) */
         .animate-scroll-left {
-            animation: scrollLeft 45s linear infinite;
+            animation: scrollLeft 18s linear infinite;
             width: max-content;
         }
         .animate-scroll-right {
-            animation: scrollRight 45s linear infinite;
+            animation: scrollRight 18s linear infinite;
             width: max-content;
         }
         .animate-scroll-left:hover, .animate-scroll-right:hover {
@@ -327,7 +329,7 @@
         </div>
     </section>
 
-    <!-- DOUBLE-ROW OVERLOADED INFINITE SLIDING GALLERY -->
+    <!-- DOUBLE-ROW OVERLOADED INFINITE SLIDING GALLERY (SWIFT 18s SPEED) -->
     <section id="gallery" class="py-24 bg-lightGreen overflow-hidden">
         <div class="text-center mb-16">
             <p class="text-xs md:text-sm font-bold tracking-[0.2em] text-brightGreen uppercase mb-2">Community Action</p>
@@ -369,7 +371,7 @@
                 </div>
             </div>
 
-            <!-- ROW 2: SCROLLS RIGHT (NEW PICTURES!) -->
+            <!-- ROW 2: SCROLLS RIGHT -->
             <div class="relative w-full flex overflow-hidden">
                 <div class="flex animate-scroll-right gap-6 px-3">
                     <!-- Set 2 -->

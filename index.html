@@ -25,28 +25,6 @@
             }
         }
     </script>
-    <style>
-        @keyframes scrollLeft {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-        }
-        @keyframes scrollRight {
-            0% { transform: translateX(-50%); }
-            100% { transform: translateX(0); }
-        }
-
-        .animate-scroll-left {
-            animation: scrollLeft 18s linear infinite;
-            width: max-content;
-        }
-        .animate-scroll-right {
-            animation: scrollRight 18s linear infinite;
-            width: max-content;
-        }
-        .animate-scroll-left:hover, .animate-scroll-right:hover {
-            animation-play-state: paused;
-        }
-    </style>
 </head>
 <body class="font-sans text-darkBrown antialiased bg-white">
 
@@ -199,7 +177,7 @@
         </div>
     </section>
 
-    <!-- IMPACT BY THE NUMBERS SECTION (ALIGNED WITH PROFILE METRICS) -->
+    <!-- IMPACT BY THE NUMBERS SECTION -->
     <section id="impact-stats" class="py-20 bg-lightOlive border-y border-gray-200/60">
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-14">
@@ -383,78 +361,150 @@
         </div>
     </section>
 
-    <!-- DOUBLE-ROW OVERLOADED INFINITE SLIDING GALLERY (SWIFT 18s SPEED) -->
-    <section id="gallery" class="py-24 bg-lightGreen overflow-hidden">
-        <div class="text-center mb-16">
-            <p class="text-xs md:text-sm font-bold tracking-[0.2em] text-brightGreen uppercase mb-2">Community Action</p>
-            <h2 class="text-4xl font-extrabold text-deepGreen mb-4">Our Impact in Pictures</h2>
-            <div class="w-24 h-1.5 bg-brandOrange mx-auto rounded-full"></div>
-        </div>
-
-        <div class="space-y-6">
-            
-            <!-- ROW 1: SCROLLS LEFT -->
-            <div class="relative w-full flex overflow-hidden">
-                <div class="flex animate-scroll-left gap-6 px-3">
-                    <!-- Set 1 -->
-                    <img src="wastetofertilizer.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Organic Fertilizer Production">
-                    <img src="Garbage collection.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Garbage Collection">
-                    <img src="Moments.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Image">
-                    <img src="Our resources.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Image">
-                    <img src="Partnerships.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Image">
-                    <img src="Recycling.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Image">
-                    <img src="The waste management team.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Image">
-                    <img src="Waste Management.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Image">
-                    <img src="Waste Packaging 1.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Image">
-                    <img src="Waste Packaging.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Image">
-                    <img src="Waste sorting .jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Image">
-                    <img src="With the community .jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Image">
-                    <!-- Set 1 Duplicate -->
-                    <img src="wastetofertilizer.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Organic Fertilizer Production">
-                    <img src="Garbage collection.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Garbage Collection">
-                    <img src="Moments.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Image">
-                    <img src="Our resources.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Image">
-                    <img src="Partnerships.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Image">
-                    <img src="Recycling.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Image">
-                    <img src="The waste management team.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Image">
-                    <img src="Waste Management.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Image">
-                    <img src="Waste Packaging 1.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Image">
-                    <img src="Waste Packaging.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Image">
-                    <img src="Waste sorting .jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Image">
-                    <img src="With the community .jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Image">
-                </div>
+    <!-- DEDICATED STILL PHOTO GALLERY GRID (NO MOTION) -->
+    <section id="gallery" class="py-24 bg-lightGreen">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <p class="text-xs md:text-sm font-bold tracking-[0.2em] text-brightGreen uppercase mb-2">Community Action Showcase</p>
+                <h2 class="text-4xl font-extrabold text-deepGreen mb-4">Our Impact Gallery</h2>
+                <div class="w-24 h-1.5 bg-brandOrange mx-auto rounded-full mb-4"></div>
+                <p class="text-darkBrown/80 max-w-xl mx-auto text-sm md:text-base">
+                    Explore our hands-on work in organic waste collection, fertilizer composting, mangrove planting, and community training.
+                </p>
             </div>
 
-            <!-- ROW 2: SCROLLS RIGHT -->
-            <div class="relative w-full flex overflow-hidden">
-                <div class="flex animate-scroll-right gap-6 px-3">
-                    <!-- Set 2 -->
-                    <img src="building.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Image">
-                    <img src="community.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Image">
-                    <img src="communitydevelopment.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Image">
-                    <img src="impacttestimonials.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Image">
-                    <img src="partnershipsforthegoals.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Image">
-                    <img src="partnervisit.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Image">
-                    <img src="sitevisits.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Image">
-                    <img src="teamwork.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Image">
-                    <img src="theelderlyandtheyoung.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Image">
-                    <img src="workshop.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Image">
-                    <img src="Cleaning the city drainage .jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Image">
-                    <!-- Set 2 Duplicate -->
-                    <img src="building.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Image">
-                    <img src="community.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Image">
-                    <img src="communitydevelopment.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Image">
-                    <img src="impacttestimonials.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Image">
-                    <img src="partnershipsforthegoals.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Image">
-                    <img src="partnervisit.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Image">
-                    <img src="sitevisits.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Image">
-                    <img src="teamwork.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Image">
-                    <img src="theelderlyandtheyoung.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Image">
-                    <img src="workshop.jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Image">
-                    <img src="Cleaning the city drainage .jpeg" class="h-64 w-96 object-cover rounded-xl shadow-lg border border-gray-100" alt="Suluhisho Image">
-                </div>
+            <!-- GALLERY CATEGORY FILTER BUTTONS -->
+            <div class="flex flex-wrap justify-center gap-3 mb-12">
+                <button class="filter-btn active bg-deepGreen text-white px-6 py-2.5 rounded-full text-sm font-bold shadow-md transition-all" data-filter="all">All Photos</button>
+                <button class="filter-btn bg-white text-deepGreen hover:bg-deepGreen hover:text-white px-6 py-2.5 rounded-full text-sm font-bold shadow-sm border border-gray-200 transition-all" data-filter="fertilizer">Waste & Fertilizer</button>
+                <button class="filter-btn bg-white text-deepGreen hover:bg-deepGreen hover:text-white px-6 py-2.5 rounded-full text-sm font-bold shadow-sm border border-gray-200 transition-all" data-filter="community">Community & Training</button>
+                <button class="filter-btn bg-white text-deepGreen hover:bg-deepGreen hover:text-white px-6 py-2.5 rounded-full text-sm font-bold shadow-sm border border-gray-200 transition-all" data-filter="environment">Environment & Clean-ups</button>
             </div>
 
+            <!-- STILL MASONRY-STYLE GRID -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Item 1 -->
+                <div class="gallery-item fertilizer overflow-hidden rounded-2xl bg-white shadow-md border border-gray-100 group">
+                    <div class="relative overflow-hidden h-72">
+                        <img src="wastetofertilizer.jpeg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Organic Fertilizer Production">
+                        <div class="absolute inset-0 bg-gradient-to-t from-deepGreen/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                            <p class="text-white font-bold text-sm">Organic Fertilizer Processing</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="gallery-item fertilizer overflow-hidden rounded-2xl bg-white shadow-md border border-gray-100 group">
+                    <div class="relative overflow-hidden h-72">
+                        <img src="Garbage collection.jpeg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Garbage Collection">
+                        <div class="absolute inset-0 bg-gradient-to-t from-deepGreen/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                            <p class="text-white font-bold text-sm">Organic Waste Collection</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="gallery-item fertilizer overflow-hidden rounded-2xl bg-white shadow-md border border-gray-100 group">
+                    <div class="relative overflow-hidden h-72">
+                        <img src="Waste sorting .jpeg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Waste Sorting">
+                        <div class="absolute inset-0 bg-gradient-to-t from-deepGreen/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                            <p class="text-white font-bold text-sm">Community Waste Sorting</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="gallery-item community overflow-hidden rounded-2xl bg-white shadow-md border border-gray-100 group">
+                    <div class="relative overflow-hidden h-72">
+                        <img src="theelderlyandtheyoung.jpeg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Youth and Elderly Empowerment">
+                        <div class="absolute inset-0 bg-gradient-to-t from-deepGreen/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                            <p class="text-white font-bold text-sm">Intergenerational Collaboration</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="gallery-item community overflow-hidden rounded-2xl bg-white shadow-md border border-gray-100 group">
+                    <div class="relative overflow-hidden h-72">
+                        <img src="workshop.jpeg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Green Skills Workshop">
+                        <div class="absolute inset-0 bg-gradient-to-t from-deepGreen/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                            <p class="text-white font-bold text-sm">Green Skills Workshop</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="gallery-item community overflow-hidden rounded-2xl bg-white shadow-md border border-gray-100 group">
+                    <div class="relative overflow-hidden h-72">
+                        <img src="impacttestimonials.jpeg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Women Empowerment">
+                        <div class="absolute inset-0 bg-gradient-to-t from-deepGreen/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                            <p class="text-white font-bold text-sm">Women's Empowerment Program</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 7 -->
+                <div class="gallery-item environment overflow-hidden rounded-2xl bg-white shadow-md border border-gray-100 group">
+                    <div class="relative overflow-hidden h-72">
+                        <img src="Mangroove planting.jpeg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Mangrove Restoration">
+                        <div class="absolute inset-0 bg-gradient-to-t from-deepGreen/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                            <p class="text-white font-bold text-sm">Mangrove Planting</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 8 -->
+                <div class="gallery-item environment overflow-hidden rounded-2xl bg-white shadow-md border border-gray-100 group">
+                    <div class="relative overflow-hidden h-72">
+                        <img src="Cleaning the city drainage .jpeg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Drainage Clean-up">
+                        <div class="absolute inset-0 bg-gradient-to-t from-deepGreen/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                            <p class="text-white font-bold text-sm">Community Clean-up Drives</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 9 -->
+                <div class="gallery-item fertilizer overflow-hidden rounded-2xl bg-white shadow-md border border-gray-100 group">
+                    <div class="relative overflow-hidden h-72">
+                        <img src="Waste Packaging.jpeg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Waste Packaging">
+                        <div class="absolute inset-0 bg-gradient-to-t from-deepGreen/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                            <p class="text-white font-bold text-sm">Recycled Waste Packaging</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 10 -->
+                <div class="gallery-item community overflow-hidden rounded-2xl bg-white shadow-md border border-gray-100 group">
+                    <div class="relative overflow-hidden h-72">
+                        <img src="partnervisit.jpeg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Partner Visit">
+                        <div class="absolute inset-0 bg-gradient-to-t from-deepGreen/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                            <p class="text-white font-bold text-sm">Strategic Partner Visit</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 11 -->
+                <div class="gallery-item community overflow-hidden rounded-2xl bg-white shadow-md border border-gray-100 group">
+                    <div class="relative overflow-hidden h-72">
+                        <img src="teamwork.jpeg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Teamwork">
+                        <div class="absolute inset-0 bg-gradient-to-t from-deepGreen/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                            <p class="text-white font-bold text-sm">Dedicated Community Team</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 12 -->
+                <div class="gallery-item environment overflow-hidden rounded-2xl bg-white shadow-md border border-gray-100 group">
+                    <div class="relative overflow-hidden h-72">
+                        <img src="sitevisits.jpeg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Environmental Site Visit">
+                        <div class="absolute inset-0 bg-gradient-to-t from-deepGreen/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                            <p class="text-white font-bold text-sm">Environmental Inspection</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
 
@@ -482,7 +532,7 @@
         </div>
     </footer>
 
-    <!-- Javascript for Animations and Mobile Menu -->
+    <!-- Javascript for Animations, Mobile Menu, and Gallery Filter -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             // Background Image Slider Logic
@@ -520,6 +570,31 @@
                     menu.classList.add('hidden');
                     icon.classList.remove('fa-xmark');
                     icon.classList.add('fa-bars');
+                });
+            });
+
+            // Gallery Category Filtering Logic
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+
+            filterBtns.forEach(button => {
+                button.addEventListener('click', () => {
+                    filterBtns.forEach(b => {
+                        b.classList.remove('bg-deepGreen', 'text-white', 'active');
+                        b.classList.add('bg-white', 'text-deepGreen');
+                    });
+                    button.classList.remove('bg-white', 'text-deepGreen');
+                    button.classList.add('bg-deepGreen', 'text-white', 'active');
+
+                    const filterValue = button.getAttribute('data-filter');
+
+                    galleryItems.forEach(item => {
+                        if (filterValue === 'all' || item.classList.contains(filterValue)) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
                 });
             });
         });

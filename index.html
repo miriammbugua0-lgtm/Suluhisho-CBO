@@ -31,60 +31,86 @@
 </head>
 <body class="font-sans text-darkBrown antialiased bg-white">
 
-    <!-- NAVIGATION WITH CLEAN SPACED HEADER -->
-    <nav class="bg-white/95 backdrop-blur-md fixed w-full z-50 top-0 border-b border-gray-100 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-24 items-center">
-                <div class="flex items-center gap-3">
-                    <img class="h-16 w-auto" src="logo.jpg" alt="Suluhisho Logo">
-                    <span class="font-extrabold text-2xl text-deepGreen tracking-tight">SULUHISHO CBO</span>
+    <!-- NAVIGATION WITH CLEAN TWO-TIER HEADER -->
+    <nav class="fixed w-full z-50 top-0 shadow-sm flex flex-col">
+        <!-- TIER 1: TOP BAR (Dark Green) -->
+        <div class="bg-deepGreen text-white/90 hidden lg:block border-b border-deepGreen/80">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-10 flex justify-between items-center text-sm">
+                <!-- Far Left: Social Media -->
+                <div class="flex items-center space-x-5">
+                    <span class="text-xs font-bold uppercase tracking-wider text-white/50 mr-2">Connect:</span>
+                    <a href="https://www.linkedin.com/in/suluhisho-cbo-335155308" target="_blank" class="hover:text-brandOrange transition-colors text-lg"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/suluhishoyeocbo" target="_blank" class="hover:text-brandOrange transition-colors text-lg"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@suluhisho1" target="_blank" class="hover:text-brandOrange transition-colors text-lg"><i class="fa-brands fa-tiktok"></i></a>
                 </div>
-                <div class="hidden lg:flex space-x-8 xl:space-x-10 items-center">
-                    <a href="#" class="text-darkBrown hover:text-brandOrange font-semibold text-base transition-colors">Home</a>
-                    <a href="#about" class="text-darkBrown hover:text-brandOrange font-semibold text-base transition-colors">About Us</a>
-                    <a href="#flagship" class="text-darkBrown hover:text-brandOrange font-semibold text-base transition-colors">Fertilizer</a>
-                    <a href="#impact-stats" class="text-darkBrown hover:text-brandOrange font-semibold text-base transition-colors">Impact</a>
-                    <a href="#programmes" class="text-darkBrown hover:text-brandOrange font-semibold text-base transition-colors">Programmes</a>
-                    <a href="#partners" class="text-darkBrown hover:text-brandOrange font-semibold text-base transition-colors">Partners</a>
-                    <a href="#gallery" class="text-darkBrown hover:text-brandOrange font-semibold text-base transition-colors">Gallery</a>
-                </div>
-                <div class="hidden lg:flex items-center space-x-5">
-                    <a href="#donate" class="bg-brandOrange text-white hover:bg-deepGreen px-5 py-2.5 rounded-full font-bold text-sm uppercase tracking-wider transition-all shadow-sm mr-2">Donate</a>
-                    <a href="https://www.linkedin.com/in/suluhisho-cbo-335155308" target="_blank" class="text-deepGreen hover:text-brandOrange text-2xl transition-colors"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.facebook.com/suluhishoyeocbo" target="_blank" class="text-deepGreen hover:text-brandOrange text-2xl transition-colors"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.tiktok.com/@suluhisho1" target="_blank" class="text-deepGreen hover:text-brandOrange text-2xl transition-colors"><i class="fa-brands fa-tiktok"></i></a>
-                </div>
-                <div class="lg:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-deepGreen hover:text-brandOrange text-3xl focus:outline-none">
-                        <i class="fa-solid fa-bars"></i>
-                    </button>
+                <!-- Right: Organization Name & Contact Info -->
+                <div class="flex items-center space-x-6 font-semibold tracking-wide text-xs">
+                    <span>Suluhisho Youth & Elderly Empowerment CBO</span>
+                    <div class="h-3 w-px bg-white/30"></div>
+                    <a href="https://wa.me/254763561922" target="_blank" class="hover:text-brandOrange transition-colors"><i class="fa-solid fa-phone mr-1.5 text-brandOrange"></i>+254 763 561 922</a>
                 </div>
             </div>
         </div>
 
-        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 shadow-xl absolute w-full left-0 top-24 pb-6 px-4">
-            <div class="flex flex-col space-y-4 pt-4">
-                <a href="#" class="mobile-link text-darkBrown hover:text-brandOrange font-semibold text-lg">Home</a>
-                <a href="#about" class="mobile-link text-darkBrown hover:text-brandOrange font-semibold text-lg">About Us</a>
-                <a href="#flagship" class="mobile-link text-darkBrown hover:text-brandOrange font-semibold text-lg">Fertilizer Enterprise</a>
-                <a href="#impact-stats" class="mobile-link text-darkBrown hover:text-brandOrange font-semibold text-lg">Impact</a>
-                <a href="#programmes" class="mobile-link text-darkBrown hover:text-brandOrange font-semibold text-lg">Programmes</a>
-                <a href="#partners" class="mobile-link text-darkBrown hover:text-brandOrange font-semibold text-lg">Partners</a>
-                <a href="#gallery" class="mobile-link text-darkBrown hover:text-brandOrange font-semibold text-lg">Gallery</a>
-                <div class="pt-2">
-                    <a href="#donate" class="mobile-link bg-brandOrange text-white block text-center px-4 py-3 rounded-xl font-bold text-lg shadow-sm">Donate</a>
+        <!-- TIER 2: MAIN NAVIGATION (White) -->
+        <div class="bg-white/95 backdrop-blur-md w-full relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between h-20 items-center">
+                    <!-- Left: Logo Only -->
+                    <div class="flex items-center">
+                        <img class="h-16 w-auto" src="logo.jpg" alt="Suluhisho Logo">
+                    </div>
+                    
+                    <!-- Center: Navigation Links -->
+                    <div class="hidden lg:flex space-x-8 items-center">
+                        <a href="#" class="text-darkBrown hover:text-brandOrange font-bold text-[15px] transition-colors">Home</a>
+                        <a href="#about" class="text-darkBrown hover:text-brandOrange font-bold text-[15px] transition-colors whitespace-nowrap">About Us</a>
+                        <a href="#flagship" class="text-darkBrown hover:text-brandOrange font-bold text-[15px] transition-colors">Fertilizer</a>
+                        <a href="#impact-stats" class="text-darkBrown hover:text-brandOrange font-bold text-[15px] transition-colors">Impact</a>
+                        <a href="#programmes" class="text-darkBrown hover:text-brandOrange font-bold text-[15px] transition-colors">Programmes</a>
+                        <a href="#partners" class="text-darkBrown hover:text-brandOrange font-bold text-[15px] transition-colors">Partners</a>
+                        <a href="#gallery" class="text-darkBrown hover:text-brandOrange font-bold text-[15px] transition-colors">Gallery</a>
+                    </div>
+
+                    <!-- Right: Dedicated Donate Button -->
+                    <div class="hidden lg:flex items-center">
+                        <a href="#donate" class="bg-brandOrange text-white hover:bg-deepGreen px-7 py-2.5 rounded-full font-black text-sm uppercase tracking-wider transition-all shadow-md transform hover:-translate-y-0.5">Donate</a>
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <div class="lg:hidden flex items-center">
+                        <button id="mobile-menu-btn" class="text-deepGreen hover:text-brandOrange text-3xl focus:outline-none">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </div>
                 </div>
-                <div class="border-t border-gray-200 pt-4 flex justify-center space-x-8">
-                    <a href="https://www.linkedin.com/in/suluhisho-cbo-335155308" target="_blank" class="text-deepGreen hover:text-brandOrange text-3xl"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.facebook.com/suluhishoyeocbo" target="_blank" class="text-deepGreen hover:text-brandOrange text-3xl"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.tiktok.com/@suluhisho1" target="_blank" class="text-deepGreen hover:text-brandOrange text-3xl"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+
+            <!-- Mobile Dropdown Menu -->
+            <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 shadow-xl absolute w-full left-0 top-full pb-6 px-4">
+                <div class="flex flex-col space-y-4 pt-4">
+                    <a href="#" class="mobile-link text-darkBrown hover:text-brandOrange font-semibold text-lg">Home</a>
+                    <a href="#about" class="mobile-link text-darkBrown hover:text-brandOrange font-semibold text-lg">About Us</a>
+                    <a href="#flagship" class="mobile-link text-darkBrown hover:text-brandOrange font-semibold text-lg">Fertilizer Enterprise</a>
+                    <a href="#impact-stats" class="mobile-link text-darkBrown hover:text-brandOrange font-semibold text-lg">Impact</a>
+                    <a href="#programmes" class="mobile-link text-darkBrown hover:text-brandOrange font-semibold text-lg">Programmes</a>
+                    <a href="#partners" class="mobile-link text-darkBrown hover:text-brandOrange font-semibold text-lg">Partners</a>
+                    <a href="#gallery" class="mobile-link text-darkBrown hover:text-brandOrange font-semibold text-lg">Gallery</a>
+                    <div class="pt-2">
+                        <a href="#donate" class="mobile-link bg-brandOrange text-white block text-center px-4 py-3 rounded-xl font-bold text-lg shadow-sm">Donate</a>
+                    </div>
+                    <div class="border-t border-gray-200 pt-4 flex justify-center space-x-8">
+                        <a href="https://www.linkedin.com/in/suluhisho-cbo-335155308" target="_blank" class="text-deepGreen hover:text-brandOrange text-3xl"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/suluhishoyeocbo" target="_blank" class="text-deepGreen hover:text-brandOrange text-3xl"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.tiktok.com/@suluhisho1" target="_blank" class="text-deepGreen hover:text-brandOrange text-3xl"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- HERO SECTION -->
-    <header class="relative pt-40 pb-32 px-4 text-center overflow-hidden min-h-[85vh] flex items-center">
+    <header class="relative pt-44 pb-32 px-4 text-center overflow-hidden min-h-[85vh] flex items-center">
         <div id="hero-slider" class="absolute inset-0 z-0">
             <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-100" style="background-image: url('The%20waste%20management%20team.jpeg');"></div>
             <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('wastetofertilizer.jpeg');"></div>

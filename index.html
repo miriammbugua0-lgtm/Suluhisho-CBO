@@ -25,6 +25,9 @@
             }
         }
     </script>
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
 </head>
 <body class="font-sans text-darkBrown antialiased bg-white">
 
@@ -36,14 +39,15 @@
                     <img class="h-16 w-auto" src="logo.jpg" alt="Suluhisho Logo">
                     <span class="font-extrabold text-2xl text-deepGreen tracking-tight">SULUHISHO CBO</span>
                 </div>
-                <div class="hidden lg:flex space-x-10 items-center">
+                <div class="hidden lg:flex space-x-8 xl:space-x-10 items-center">
                     <a href="#" class="text-darkBrown hover:text-brandOrange font-semibold text-base transition-colors">Home</a>
                     <a href="#about" class="text-darkBrown hover:text-brandOrange font-semibold text-base transition-colors">About Us</a>
-                    <a href="#flagship" class="text-darkBrown hover:text-brandOrange font-semibold text-base transition-colors">Fertilizer Enterprise</a>
+                    <a href="#flagship" class="text-darkBrown hover:text-brandOrange font-semibold text-base transition-colors">Fertilizer</a>
                     <a href="#impact-stats" class="text-darkBrown hover:text-brandOrange font-semibold text-base transition-colors">Impact</a>
                     <a href="#programmes" class="text-darkBrown hover:text-brandOrange font-semibold text-base transition-colors">Programmes</a>
                     <a href="#partners" class="text-darkBrown hover:text-brandOrange font-semibold text-base transition-colors">Partners</a>
                     <a href="#gallery" class="text-darkBrown hover:text-brandOrange font-semibold text-base transition-colors">Gallery</a>
+                    <a href="#donate" class="text-brandOrange hover:text-deepGreen font-black text-base transition-colors uppercase tracking-wide">Donate</a>
                 </div>
                 <div class="hidden lg:flex items-center space-x-6">
                     <a href="https://www.linkedin.com/in/suluhisho-cbo-335155308" target="_blank" class="text-deepGreen hover:text-brandOrange text-2xl transition-colors"><i class="fa-brands fa-linkedin"></i></a>
@@ -67,6 +71,7 @@
                 <a href="#programmes" class="mobile-link text-darkBrown hover:text-brandOrange font-semibold text-lg">Programmes</a>
                 <a href="#partners" class="mobile-link text-darkBrown hover:text-brandOrange font-semibold text-lg">Partners</a>
                 <a href="#gallery" class="mobile-link text-darkBrown hover:text-brandOrange font-semibold text-lg">Gallery</a>
+                <a href="#donate" class="mobile-link text-brandOrange hover:text-deepGreen font-black text-lg uppercase">Donate</a>
                 <div class="border-t border-gray-200 pt-4 flex space-x-6">
                     <a href="https://www.linkedin.com/in/suluhisho-cbo-335155308" target="_blank" class="text-deepGreen hover:text-brandOrange text-2xl"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://www.facebook.com/suluhishoyeocbo" target="_blank" class="text-deepGreen hover:text-brandOrange text-2xl"><i class="fa-brands fa-facebook"></i></a>
@@ -100,7 +105,7 @@
                 <a href="https://wa.me/254763561922?text=Hello%20Suluhisho!%20I%20would%20like%20to%20order%20organic%20fertilizer%20or%20partner." target="_blank" class="bg-white text-deepGreen border-2 border-deepGreen hover:bg-deepGreen hover:text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-md">Order / Get Involved</a>
             </div>
             <div class="flex justify-center">
-                <a href="https://wa.me/254763561922?text=Hello%20Suluhisho!%20I%20would%20like%20to%20make%20a%20donation." target="_blank" class="bg-white text-darkBrown border-2 border-gray-200 hover:border-brandOrange px-12 py-3.5 rounded-full font-bold text-lg transition-all shadow-md w-full sm:w-auto">Donate</a>
+                <a href="#donate" class="bg-white text-darkBrown border-2 border-gray-200 hover:border-brandOrange px-12 py-3.5 rounded-full font-bold text-lg transition-all shadow-md w-full sm:w-auto">Donate</a>
             </div>
         </div>
     </header>
@@ -255,7 +260,7 @@
         </div>
     </section>
 
-    <!-- OFFICIAL STRATEGIC PARTNERS SECTION WITH UPDATED ORDER -->
+    <!-- OFFICIAL STRATEGIC PARTNERS SECTION -->
     <section id="partners" class="py-24 bg-lightOlive">
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-16">
@@ -268,7 +273,6 @@
             </div>
 
             <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 items-center text-center">
-                
                 <!-- ROW 1 -->
                 <div class="p-6 bg-white rounded-2xl border border-gray-100 flex flex-col items-center justify-center h-48 hover:border-deepGreen hover:shadow-lg transition-all group">
                     <img src="nationalgovernemntofkenya.png" class="max-h-20 w-auto object-contain group-hover:scale-105 transition-transform" alt="Government of Kenya Logo">
@@ -287,7 +291,7 @@
                     <p class="text-xs font-bold text-deepGreen mt-3">KEMSFED</p>
                 </div>
 
-                <!-- ROW 2: SHOFCO, GAC, VSO, Hand in Hand -->
+                <!-- ROW 2 -->
                 <div class="p-6 bg-white rounded-2xl border border-gray-100 flex flex-col items-center justify-center h-48 hover:border-deepGreen hover:shadow-lg transition-all group">
                     <img src="Shofco.png" class="max-h-20 w-auto object-contain group-hover:scale-105 transition-transform" alt="SHOFCO Logo">
                     <p class="text-xs font-bold text-deepGreen mt-3">SHOFCO</p>
@@ -305,7 +309,7 @@
                     <p class="text-xs font-bold text-deepGreen mt-3">Hand in Hand EA</p>
                 </div>
 
-                <!-- ROW 3 & 4: Sinapis, Sote Hub, TechnoServe, Jam TV, Networks -->
+                <!-- ROW 3 & 4 -->
                 <div class="p-6 bg-white rounded-2xl border border-gray-100 flex flex-col items-center justify-center h-48 hover:border-deepGreen hover:shadow-lg transition-all group">
                     <img src="sinapis.png" class="max-h-20 w-auto object-contain group-hover:scale-105 transition-transform" alt="Sinapis Logo">
                     <p class="text-xs font-bold text-deepGreen mt-3">Sinapis</p>
@@ -400,6 +404,76 @@
         </div>
     </section>
 
+    <!-- DEDICATED DONATION SECTION -->
+    <section id="donate" class="py-24 bg-white border-t border-gray-100">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <p class="text-xs md:text-sm font-bold tracking-[0.2em] text-brightGreen uppercase mb-2">Support Our Cause</p>
+                <h2 class="text-4xl font-extrabold text-deepGreen mb-4">Make a Donation</h2>
+                <div class="w-24 h-1.5 bg-brandOrange mx-auto rounded-full mb-6"></div>
+                <p class="text-darkBrown/80 max-w-2xl mx-auto text-base">
+                    Your contributions directly fund our community training, organic waste collection, and women & youth empowerment programs across Mombasa and Kwale.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- M-Pesa Card -->
+                <div class="bg-lightGreen p-10 rounded-3xl border-2 border-brightGreen/30 shadow-lg hover:shadow-xl transition-shadow relative overflow-hidden">
+                    <div class="absolute -right-6 -top-6 text-brightGreen/10">
+                        <i class="fa-solid fa-mobile-screen text-9xl"></i>
+                    </div>
+                    <div class="relative z-10">
+                        <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-6 shadow-sm">
+                            <i class="fa-solid fa-mobile-screen-button text-3xl text-brightGreen"></i>
+                        </div>
+                        <h3 class="text-2xl font-black text-deepGreen mb-2">Lipa na M-Pesa</h3>
+                        <p class="text-darkBrown/70 mb-6 font-medium">Quick and secure mobile money transfer.</p>
+                        
+                        <div class="space-y-4 bg-white p-6 rounded-2xl shadow-sm">
+                            <div>
+                                <p class="text-xs font-bold text-darkBrown/50 uppercase tracking-wider mb-1">Paybill Number</p>
+                                <p class="text-2xl font-black text-brandOrange tracking-widest">247247</p>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-darkBrown/50 uppercase tracking-wider mb-1">Account Number</p>
+                                <p class="text-lg font-bold text-deepGreen tracking-wide">1140182594320</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bank Card -->
+                <div class="bg-lightOlive p-10 rounded-3xl border-2 border-deepGreen/20 shadow-lg hover:shadow-xl transition-shadow relative overflow-hidden">
+                    <div class="absolute -right-6 -top-6 text-deepGreen/5">
+                        <i class="fa-solid fa-building-columns text-9xl"></i>
+                    </div>
+                    <div class="relative z-10">
+                        <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-6 shadow-sm">
+                            <i class="fa-solid fa-building-columns text-3xl text-deepGreen"></i>
+                        </div>
+                        <h3 class="text-2xl font-black text-deepGreen mb-2">Bank Transfer</h3>
+                        <p class="text-darkBrown/70 mb-6 font-medium">Direct deposit or cheque via Equity Bank.</p>
+                        
+                        <div class="space-y-4 bg-white p-6 rounded-2xl shadow-sm">
+                            <div>
+                                <p class="text-xs font-bold text-darkBrown/50 uppercase tracking-wider mb-1">Bank Name</p>
+                                <p class="text-lg font-bold text-deepGreen">Equity Bank</p>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-darkBrown/50 uppercase tracking-wider mb-1">Account Name</p>
+                                <p class="text-sm font-bold text-deepGreen">Suluhisho Youth and Elderly Empowerment CBO</p>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-darkBrown/50 uppercase tracking-wider mb-1">Account Number</p>
+                                <p class="text-lg font-black text-brandOrange tracking-widest">1140182594320</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- FOOTER -->
     <footer class="bg-deepGreen text-white/80 py-16">
         <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-12">
@@ -413,7 +487,7 @@
                 <h4 class="text-white text-xl font-bold mb-6">Support Our Cause</h4>
                 <div class="flex flex-col items-start gap-4">
                     <a href="https://wa.me/254763561922" target="_blank" class="inline-block bg-brandOrange text-white px-6 py-3 rounded-full font-bold hover:bg-brightGreen transition-colors shadow-md">Contact Us via WhatsApp</a>
-                    <a href="https://wa.me/254763561922?text=Hello!%20I%20would%20like%20to%20make%20a%20donation." target="_blank" class="inline-block bg-white text-darkBrown px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition-colors shadow-md">Donate</a>
+                    <a href="#donate" class="inline-block bg-white text-darkBrown px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition-colors shadow-md">Donate</a>
                 </div>
             </div>
             <div>
